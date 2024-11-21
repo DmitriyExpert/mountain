@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u758FI8sczQ=",
+  "dgSpecHash": "EcJwKa3GYDw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\timar\\OneDrive\\Рабочий стол\\mountain-main\\WinFormsApp1.csproj",
+  "projectFilePath": "C:\\Users\\timar\\OneDrive\\Рабочий стол\\proekyt\\mountain\\WinFormsApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\timar\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\timar\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -44,7 +45,7 @@ namespace WinFormsApp1
 
         private void registerBtn_Click(object sender, EventArgs e)
         {
-            if(nameTextbox.Text == "")
+            if (nameTextbox.Text == "")
             {
                 MessageBox.Show("Введите имя");
                 return;
@@ -69,9 +70,9 @@ namespace WinFormsApp1
             {
                 MessageBox.Show("Пароли не совпадают");
                 return;
-            } 
+            }
 
-            if(isUserExists())
+            if (isUserExists())
             {
                 return;
             }
@@ -84,24 +85,26 @@ namespace WinFormsApp1
             if (middleNametextBox.Text == "")
             {
                 command.Parameters.Add("@middleName", MySqlDbType.VarChar).Value = middleNametextBox.Text;
-            } else
+            }
+            else
             {
                 command.Parameters.Add("@middleName", MySqlDbType.VarChar).Value = middleNametextBox.Text;
             }
-            
+
             command.Parameters.Add("@lastName", MySqlDbType.VarChar).Value = lastnameTextbox.Text;
             command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = logintextBox.Text;
-            command.Parameters.Add("@uP", MySqlDbType.VarChar).Value = passwordtextBox.Text;
+            command.Parameters.Add("@uP", MySqlDbType.VarChar).Value = Class1.hashPassword(passwordtextBox.Text);
 
             db.openConnection();
 
-            if(command.ExecuteNonQuery() == 1)
+            if (command.ExecuteNonQuery() == 1)
             {
                 MessageBox.Show("Регистрация прошла успешно");
                 auth authForm = new auth();
                 this.Close();
                 authForm.Show();
-            } else
+            }
+            else
             {
                 MessageBox.Show("Аккаунт не создан");
             }
@@ -131,6 +134,11 @@ namespace WinFormsApp1
             {
                 return false;
             }
+        }
+
+        private void repasswordtextBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
