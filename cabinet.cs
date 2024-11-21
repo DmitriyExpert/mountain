@@ -43,7 +43,7 @@ namespace WinFormsApp1
             }
             else
             {
-                labelProff.Text = "Ошибка";
+                labelProff.Text = CurrentUser.Id.ToString();
             }
 
             fioUser.Text = CurrentUser.LastName + " " + CurrentUser.FirsName + " " + CurrentUser.MiddleName;

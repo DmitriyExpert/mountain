@@ -170,6 +170,7 @@
             buttonRoleSearch.TabIndex = 65;
             buttonRoleSearch.Text = "Поиск";
             buttonRoleSearch.UseVisualStyleBackColor = true;
+            buttonRoleSearch.Click += buttonRoleSearch_Click;
             // 
             // roleSearchField
             // 
