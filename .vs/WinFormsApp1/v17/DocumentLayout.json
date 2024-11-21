@@ -3,60 +3,44 @@
   "WorkspaceRootPath": "D:\\VSproject\\WinFormsApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\redacusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:redacusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|d:\\vsproject\\winformsapp1\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\editme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:editme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\userauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:userauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\adminpanelmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:adminpanelmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\cabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:cabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\editme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:editme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\adminpanelmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:adminpanelmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\redacusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:redacusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\cabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:cabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\registration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:registration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\cabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:cabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\cabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:cabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -68,19 +52,6 @@
           "DockedWidth": 200,
           "SelectedChildIndex": 9,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "cabinet.cs",
-              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\cabinet.cs",
-              "RelativeDocumentMoniker": "cabinet.cs",
-              "ToolTip": "D:\\VSproject\\WinFormsApp1\\cabinet.cs",
-              "RelativeToolTip": "cabinet.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAIwGAAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T14:19:41.797Z",
-              "IsPinned": true
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
@@ -94,157 +65,126 @@
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "adminpanelmenu.cs",
-              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\adminpanelmenu.cs",
-              "RelativeDocumentMoniker": "adminpanelmenu.cs",
-              "ToolTip": "D:\\VSproject\\WinFormsApp1\\adminpanelmenu.cs",
-              "RelativeToolTip": "adminpanelmenu.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T20:24:47.36Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "adminpanelmenu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\adminpanelmenu.cs",
-              "RelativeDocumentMoniker": "adminpanelmenu.cs",
-              "ToolTip": "D:\\VSproject\\WinFormsApp1\\adminpanelmenu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "adminpanelmenu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T20:23:48.099Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "editme.cs [Design]",
-              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\editme.cs",
-              "RelativeDocumentMoniker": "editme.cs",
-              "ToolTip": "D:\\VSproject\\WinFormsApp1\\editme.cs [Design]",
-              "RelativeToolTip": "editme.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T15:49:22.273Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "auth.cs",
-              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\auth.cs",
-              "RelativeDocumentMoniker": "auth.cs",
-              "ToolTip": "D:\\VSproject\\WinFormsApp1\\auth.cs",
-              "RelativeToolTip": "auth.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAAwEYAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T21:57:18.427Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "userAuth.cs",
-              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\userAuth.cs",
-              "RelativeDocumentMoniker": "userAuth.cs",
-              "ToolTip": "D:\\VSproject\\WinFormsApp1\\userAuth.cs",
-              "RelativeToolTip": "userAuth.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
+              "Title": "auth.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\auth.cs",
+              "RelativeDocumentMoniker": "auth.cs",
+              "ToolTip": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\auth.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T19:08:06.999Z"
+              "WhenOpened": "2024-11-21T20:13:30.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "registration.Designer.cs",
+              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\registration.Designer.cs",
+              "RelativeDocumentMoniker": "registration.Designer.cs",
+              "ToolTip": "D:\\VSproject\\WinFormsApp1\\registration.Designer.cs",
+              "RelativeToolTip": "registration.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T20:13:15.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\registration.cs",
+              "RelativeDocumentMoniker": "registration.cs",
+              "ToolTip": "D:\\VSproject\\WinFormsApp1\\registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T20:13:01.275Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "cabinet.cs",
+              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\cabinet.cs",
+              "RelativeDocumentMoniker": "cabinet.cs",
+              "ToolTip": "D:\\VSproject\\WinFormsApp1\\cabinet.cs",
+              "RelativeToolTip": "cabinet.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwC0AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T15:53:44.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "cabinet.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\cabinet.cs",
+              "RelativeDocumentMoniker": "cabinet.cs",
+              "ToolTip": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mountain-main\\cabinet.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T15:53:37.558Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "redacUsers.cs",
-              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\redacUsers.cs",
-              "RelativeDocumentMoniker": "redacUsers.cs",
-              "ToolTip": "D:\\VSproject\\WinFormsApp1\\redacUsers.cs",
-              "RelativeToolTip": "redacUsers.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAcwFMAAAAFAAAA",
+              "Title": "DBConnection.cs",
+              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\DBConnection.cs",
+              "RelativeDocumentMoniker": "DBConnection.cs",
+              "ToolTip": "D:\\VSproject\\WinFormsApp1\\DBConnection.cs",
+              "RelativeToolTip": "DBConnection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T20:47:55.556Z",
+              "WhenOpened": "2024-11-21T15:51:31.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "registration.cs",
+              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\registration.cs",
+              "RelativeDocumentMoniker": "registration.cs",
+              "ToolTip": "D:\\VSproject\\WinFormsApp1\\registration.cs",
+              "RelativeToolTip": "registration.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAewH0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T20:29:26.645Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "editme.cs",
-              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\editme.cs",
-              "RelativeDocumentMoniker": "editme.cs",
-              "ToolTip": "D:\\VSproject\\WinFormsApp1\\editme.cs",
-              "RelativeToolTip": "editme.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAcwFQAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T15:52:22.935Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "redacUsers.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\redacUsers.cs",
-              "RelativeDocumentMoniker": "redacUsers.cs",
-              "ToolTip": "D:\\VSproject\\WinFormsApp1\\redacUsers.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "redacUsers.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T20:47:13.738Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "auth.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Title": "auth.cs",
               "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\auth.cs",
               "RelativeDocumentMoniker": "auth.cs",
-              "ToolTip": "D:\\VSproject\\WinFormsApp1\\auth.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "auth.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "ToolTip": "D:\\VSproject\\WinFormsApp1\\auth.cs",
+              "RelativeToolTip": "auth.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAtwEMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T16:07:57.147Z"
+              "WhenOpened": "2024-11-21T20:13:38.698Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "cabinet.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\cabinet.cs",
-              "RelativeDocumentMoniker": "cabinet.cs",
-              "ToolTip": "D:\\VSproject\\WinFormsApp1\\cabinet.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "cabinet.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentIndex": 4,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\Class1.cs",
+              "RelativeDocumentMoniker": "Class1.cs",
+              "ToolTip": "D:\\VSproject\\WinFormsApp1\\Class1.cs",
+              "RelativeToolTip": "Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T18:24:44.695Z"
+              "WhenOpened": "2024-11-21T20:18:58.093Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "menu.cs",
-              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\menu.cs",
-              "RelativeDocumentMoniker": "menu.cs",
-              "ToolTip": "D:\\VSproject\\WinFormsApp1\\menu.cs",
-              "RelativeToolTip": "menu.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAEoAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T17:41:59.707Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\menu.cs",
               "RelativeDocumentMoniker": "menu.cs",
-              "ToolTip": "D:\\VSproject\\WinFormsApp1\\menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "ToolTip": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T15:54:15.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "functions.cs",
-              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\functions.cs",
-              "RelativeDocumentMoniker": "functions.cs",
-              "ToolTip": "D:\\VSproject\\WinFormsApp1\\functions.cs",
-              "RelativeToolTip": "functions.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T18:48:16.863Z"
             }
           ]
         }

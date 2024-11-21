@@ -138,6 +138,7 @@
             repasswordtextBox3.PlaceholderText = "Введите пароль еще раз";
             repasswordtextBox3.Size = new Size(269, 26);
             repasswordtextBox3.TabIndex = 14;
+            repasswordtextBox3.TextChanged += repasswordtextBox3_TextChanged;
             // 
             // registerBtn
             // 

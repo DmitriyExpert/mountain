@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +17,7 @@ namespace WinFormsApp1
         public auth()
         {
             InitializeComponent();
+            passwordtextBox.UseSystemPasswordChar = true;
         }
 
         private void closeBtn_Click(object sender, EventArgs e)
@@ -53,7 +55,7 @@ namespace WinFormsApp1
         private void loginBtn_Click(object sender, EventArgs e)
         {
             String loginUser = logintextBox.Text;
-            String passUser = passwordtextBox.Text;
+            String passUser = Class1.hashPassword(passwordtextBox.Text);
 
             DBConnection db = new DBConnection();
             DataTable table = new DataTable();
@@ -64,12 +66,12 @@ namespace WinFormsApp1
             command.Parameters.Add("@uP", MySqlDbType.VarChar).Value = passUser;
             adapter.SelectCommand = command;
             adapter.Fill(table);
-           
+
 
             if (table.Rows.Count > 0)
             {
                 MessageBox.Show("Авторизация успешна!");
-        
+
 
                 try
                 {
@@ -77,7 +79,7 @@ namespace WinFormsApp1
                     int id = Convert.ToInt32(row["id"]);
                     int roleId = Convert.ToInt32(row["role_id"]);
 
-                    AuthUser authUser = new AuthUser( 
+                    AuthUser authUser = new AuthUser(
                         id,
                         row["firs_name"]?.ToString() ?? "",
                         row["middle_name"]?.ToString() ?? "",
@@ -105,6 +107,23 @@ namespace WinFormsApp1
                 MessageBox.Show("Не правильный логин или пароль");
                 passwordtextBox.Text = "";
                 return;
+            }
+        }
+
+        private void passwordtextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                passwordtextBox.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                passwordtextBox.UseSystemPasswordChar = true;
             }
         }
     }

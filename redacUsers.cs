@@ -56,31 +56,6 @@ namespace WinFormsApp1
             this.Close();
         }
 
-        private void buttonRoleSearch_Click(object sender, EventArgs e)
-        {
-            if(roleSearchField.Text != "")
-            {
-                try
-                {
-                    DBConnection db = new DBConnection(); // Соединение создаётся один раз
-                    using (MySqlConnection connection = db.getConnection()) // Соединение создаётся один раз
-                    {
-                        connection.Open();
-                            
-                        connection.Close();
-                    }
-                }
-                catch (MySqlException ex)
-                {
-                    MessageBox.Show($"Ошибка базы данных: {ex.Message}");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Произошла ошибка: {ex.Message}");
-                }
-            }
-        }
-        }
+        
     }
-
-
+}

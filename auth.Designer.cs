@@ -38,6 +38,7 @@
             bodyRegisterTextBox = new RichTextBox();
             passwordtextBox = new TextBox();
             logintextBox = new TextBox();
+            checkBox1 = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)logoicon).BeginInit();
             SuspendLayout();
             // 
@@ -153,6 +154,7 @@
             passwordtextBox.PlaceholderText = "Пароль";
             passwordtextBox.Size = new Size(269, 26);
             passwordtextBox.TabIndex = 20;
+            passwordtextBox.TextChanged += passwordtextBox_TextChanged;
             // 
             // logintextBox
             // 
@@ -164,6 +166,18 @@
             logintextBox.Size = new Size(269, 26);
             logintextBox.TabIndex = 19;
             // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Font = new Font("Arial", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            checkBox1.Location = new Point(230, 422);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(126, 20);
+            checkBox1.TabIndex = 21;
+            checkBox1.Text = "Показать пароль";
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            // 
             // auth
             // 
             AutoScaleDimensions = new SizeF(12F, 22F);
@@ -171,6 +185,7 @@
             BackColor = Color.White;
             ClientSize = new Size(1904, 1041);
             ControlBox = false;
+            Controls.Add(checkBox1);
             Controls.Add(passwordtextBox);
             Controls.Add(logintextBox);
             Controls.Add(bodyRegisterTextBox);
@@ -203,5 +218,6 @@
         private RichTextBox bodyRegisterTextBox;
         private TextBox passwordtextBox;
         private TextBox logintextBox;
+        private CheckBox checkBox1;
     }
 }
