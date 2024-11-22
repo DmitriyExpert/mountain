@@ -82,6 +82,7 @@
             panel.Size = new Size(185, 25);
             panel.TabIndex = 30;
             panel.Text = "Панель управления";
+            panel.Click += panel_Click;
             // 
             // pictureToCabinet
             // 
@@ -190,6 +191,7 @@
             pictureBox4.Size = new Size(69, 69);
             pictureBox4.TabIndex = 36;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // toContact
             // 
@@ -206,6 +208,7 @@
             toContact.Size = new Size(48, 48);
             toContact.TabIndex = 37;
             toContact.UseVisualStyleBackColor = false;
+            toContact.Click += toContact_Click;
             // 
             // labelCabinetTitle
             // 

@@ -110,16 +110,17 @@ namespace WinFormsApp1
 
                         if (passwordEditField.Text != "")
                         {
-                            if(repassEditField.Text != "" && repassEditField.Text == passwordEditField.Text)
+                            if (repassEditField.Text != "" && repassEditField.Text == passwordEditField.Text)
                             {
                                 using (MySqlCommand commandLastNameField = new MySqlCommand("UPDATE mountain.users SET `pass` = @p WHERE `id` = @cuID", connection))
                                 {
-                                    commandLastNameField.Parameters.AddWithValue("@p", passwordEditField.Text);
+                                    commandLastNameField.Parameters.AddWithValue("@p", Class1.hashPassword(passwordEditField.Text));
                                     commandLastNameField.Parameters.AddWithValue("@cuID", _curruser.Id);
                                     commandLastNameField.ExecuteNonQuery();
                                 }
-            
-                            } else
+
+                            }
+                            else
                             {
                                 MessageBox.Show("Введите пароль повторно, в поле для повторного ввода");
                                 return;
@@ -152,6 +153,23 @@ namespace WinFormsApp1
             cabinet cabinet = new cabinet(_curruser);
             this.Close();
             cabinet.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            contacts contacts = new contacts(_curruser); contacts.Show(); this.Close();
+        }
+
+        private void toContact_Click(object sender, EventArgs e)
+        {
+            contacts contacts = new contacts(_curruser); contacts.Show(); this.Close();
+        }
+
+        private void panel_Click(object sender, EventArgs e)
+        {
+            adminpanelmenu adminpanelmenu = new adminpanelmenu(_curruser);
+            adminpanelmenu.Show();
+            this.Close();
         }
     }
 }

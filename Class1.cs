@@ -12,6 +12,7 @@ namespace WinFormsApp1
         public static string hashPassword(string password)
         {
             MD5 md5 = MD5.Create();
+            
 
             byte[] b = Encoding.ASCII.GetBytes(password);
             byte[] hash = md5.ComputeHash(b);

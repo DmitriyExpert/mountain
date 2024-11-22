@@ -19,10 +19,11 @@ namespace WinFormsApp1
         public cabinet(AuthUser CurrentUser)
         {
             InitializeComponent();
-            if(CurrentUser.RoleId == 2)
+            if (CurrentUser.RoleId == 2)
             {
                 panel.Visible = true;
-            } else
+            }
+            else
             {
                 panel.Visible = false;
             }
@@ -32,7 +33,9 @@ namespace WinFormsApp1
 
             MySqlCommand command = new MySqlCommand("SELECT role_name FROM mountain.roles where `id` = @parseId", db.getConnection());
             command.Parameters.Add("@parseId", MySqlDbType.VarChar).Value = Convert.ToString(CurrentUser.RoleId);
-            
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
 
             if (table.Rows.Count > 0)
             {
@@ -43,7 +46,7 @@ namespace WinFormsApp1
             }
             else
             {
-                labelProff.Text = CurrentUser.Id.ToString();
+                labelProff.Text = "Ошибка";
             }
 
             fioUser.Text = CurrentUser.LastName + " " + CurrentUser.FirsName + " " + CurrentUser.MiddleName;
@@ -95,6 +98,27 @@ namespace WinFormsApp1
             editme editme = new editme(_currUser);
             this.Close();
             editme.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            contacts contacts = new contacts(_currUser);
+            this.Close();
+            contacts.Show();
+        }
+
+        private void toContact_Click(object sender, EventArgs e)
+        {
+            contacts contacts = new contacts(_currUser);
+            this.Close();
+            contacts.Show();
+        }
+
+        private void panel_Click(object sender, EventArgs e)
+        {
+            adminpanelmenu adminpanelmenu = new adminpanelmenu(_currUser);
+            this.Close();  
+            adminpanelmenu.Show();
         }
     }
 }
