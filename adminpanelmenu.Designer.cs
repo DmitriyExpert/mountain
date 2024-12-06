@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminpanelmenu));
             iconimg = new Button();
             closeBtnRegister = new Button();
-            logoiconRegister = new PictureBox();
             AdminPanelLogo = new PictureBox();
             toClient = new Label();
             toRedacUsers = new Label();
             toRedacRoles = new Label();
-            ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
+            logoiconRegister = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
             SuspendLayout();
             // 
             // iconimg
@@ -70,15 +70,6 @@
             closeBtnRegister.TabIndex = 48;
             closeBtnRegister.UseVisualStyleBackColor = true;
             closeBtnRegister.Click += closeBtnRegister_Click;
-            // 
-            // logoiconRegister
-            // 
-            logoiconRegister.Image = Properties.Resources.SCHEDULE_mountain;
-            logoiconRegister.Location = new Point(43, 32);
-            logoiconRegister.Name = "logoiconRegister";
-            logoiconRegister.Size = new Size(298, 37);
-            logoiconRegister.TabIndex = 47;
-            logoiconRegister.TabStop = false;
             // 
             // AdminPanelLogo
             // 
@@ -125,6 +116,16 @@
             toRedacRoles.Size = new Size(169, 19);
             toRedacRoles.TabIndex = 53;
             toRedacRoles.Text = "Управление ролями";
+            toRedacRoles.Click += toRedacRoles_Click;
+            // 
+            // logoiconRegister
+            // 
+            logoiconRegister.Image = Properties.Resources.SCHEDULE_mountain;
+            logoiconRegister.Location = new Point(43, 32);
+            logoiconRegister.Name = "logoiconRegister";
+            logoiconRegister.Size = new Size(298, 37);
+            logoiconRegister.TabIndex = 54;
+            logoiconRegister.TabStop = false;
             // 
             // adminpanelmenu
             // 
@@ -133,18 +134,18 @@
             BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(1904, 1041);
             ControlBox = false;
+            Controls.Add(logoiconRegister);
             Controls.Add(toRedacRoles);
             Controls.Add(toRedacUsers);
             Controls.Add(toClient);
             Controls.Add(AdminPanelLogo);
             Controls.Add(iconimg);
             Controls.Add(closeBtnRegister);
-            Controls.Add(logoiconRegister);
             Name = "adminpanelmenu";
             Text = "adminpanelmenu";
             Load += adminpanelmenu_Load;
-            ((System.ComponentModel.ISupportInitialize)logoiconRegister).EndInit();
             ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).EndInit();
+            ((System.ComponentModel.ISupportInitialize)logoiconRegister).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -153,10 +154,10 @@
 
         private Button iconimg;
         private Button closeBtnRegister;
-        private PictureBox logoiconRegister;
         private PictureBox AdminPanelLogo;
         private Label toClient;
         private Label toRedacUsers;
         private Label toRedacRoles;
+        private PictureBox logoiconRegister;
     }
 }

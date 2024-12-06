@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Text.RegularExpressions;
 namespace WinFormsApp1
 {
     internal static class functions
@@ -26,5 +26,12 @@ namespace WinFormsApp1
                 label.Visible = false;
             }
         }
-    }
+
+    
+
+        public static bool ContainsDigit(string text)
+        {
+            return Regex.IsMatch(text, @"\d");
+        }
+}
 }

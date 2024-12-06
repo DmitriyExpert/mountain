@@ -40,7 +40,7 @@ namespace WinFormsApp1
                 labelProff.Text = "Ошибка";
             }
 
-            fioUser.Text = CurrentUser.LastName + " " + CurrentUser.FirsName + " " + CurrentUser.MiddleName;
+            fioUser.Text = CurrentUser.LastName + " " + CurrentUser.FirstName + " " + CurrentUser.MiddleName;
             identifyUser.Text = CurrentUser.Id.ToString() + ' ' + "-";
             _curruser = CurrentUser;
             labelVisible = this.panel;
@@ -77,13 +77,13 @@ namespace WinFormsApp1
 
                         if (firstNameEditField.Text != "")
                         {
-                            using (MySqlCommand commandNameField = new MySqlCommand("UPDATE mountain.users SET `firs_name` = @fn WHERE `id` = @cuID", connection))
+                            using (MySqlCommand commandNameField = new MySqlCommand("UPDATE mountain.users SET `first_name` = @fn WHERE `id` = @cuID", connection))
                             {
                                 commandNameField.Parameters.AddWithValue("@fn", firstNameEditField.Text);
                                 commandNameField.Parameters.AddWithValue("@cuID", _curruser.Id);
                                 commandNameField.ExecuteNonQuery();
                             }
-                            _curruser.FirsName = firstNameEditField.Text;
+                            _curruser.FirstName = firstNameEditField.Text;
                         }
 
                         if (lastNameEditField.Text != "")

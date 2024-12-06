@@ -41,6 +41,22 @@ namespace WinFormsApp1
             WindowState = FormWindowState.Maximized;
             roleSearchField.Text = "Выберите роль";
             this.dataGridViewUsers.SelectionChanged += new System.EventHandler(this.dataGridViewUsers_SelectionChanged);
+
+            DBConnection db = new DBConnection();
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            db.openConnection();
+            MySqlCommand command = new MySqlCommand("SELECT u.id, u.first_name, u.last_name, u.login, r.role_name FROM mountain.users u INNER JOIN mountain.roles r ON u.role_id = r.id", db.getConnection());
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+            if(table.Rows.Count > 0)
+            {
+                dataGridViewUsers.DataSource = table;
+            } else
+            {
+                MessageBox.Show("В базе данных нет пользователей");
+            }
+            db.closeConnection();
         }
 
         private void iconimg_Click(object sender, EventArgs e)
@@ -76,7 +92,7 @@ namespace WinFormsApp1
                 int id = Convert.ToInt32(row["id"]);
                 DataTable table2 = new DataTable();
                 MySqlDataAdapter adapter2 = new MySqlDataAdapter();
-                MySqlCommand command2 = new MySqlCommand("SELECT u.id, u.firs_name, u.last_name, u.login, r.role_name FROM mountain.users u INNER JOIN mountain.roles r ON u.role_id = r.id WHERE u.role_id = @RoleId", db.getConnection());
+                MySqlCommand command2 = new MySqlCommand("SELECT u.id, u.first_name, u.last_name, u.login, r.role_name FROM mountain.users u INNER JOIN mountain.roles r ON u.role_id = r.id WHERE u.role_id = @RoleId", db.getConnection());
                 command2.Parameters.AddWithValue("@RoleId", id.ToString());
                 adapter2.SelectCommand = command2;
                 adapter2.Fill(table2);
@@ -93,6 +109,7 @@ namespace WinFormsApp1
             {
                 roleSearchField.Text = "Ошибка: Выберите роль из списка";
             }
+            db.closeConnection();
         }
 
 
@@ -103,7 +120,7 @@ namespace WinFormsApp1
             db.openConnection();
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
-            MySqlCommand command = new MySqlCommand("SELECT u.id, u.firs_name, u.last_name, u.login, r.role_name FROM mountain.users u INNER JOIN mountain.roles r ON u.role_id = r.id WHERE u.id = @Id", db.getConnection());
+            MySqlCommand command = new MySqlCommand("SELECT u.id, u.first_name, u.last_name, u.login, r.role_name FROM mountain.users u INNER JOIN mountain.roles r ON u.role_id = r.id WHERE u.id = @Id", db.getConnection());
             command.Parameters.Add("@Id", MySqlDbType.VarChar).Value = idSearchField.Text;
             adapter.SelectCommand = command;
             adapter.Fill(table);
@@ -126,7 +143,7 @@ namespace WinFormsApp1
                 DataGridViewRow clickedRow = dataGridViewUsers.Rows[e.RowIndex];
 
                 // Обрабатываем данные выбранной строки
-                string firstName = clickedRow.Cells["firs_name"].Value?.ToString();  // Используем ?. для безопасного доступа
+                string firstName = clickedRow.Cells["first_name"].Value?.ToString();  // Используем ?. для безопасного доступа
                 int id = Convert.ToInt32(clickedRow.Cells["id"].Value); // Используем Convert.ToInt32, обрабатываем исключение ниже
 
                 try
@@ -159,7 +176,7 @@ namespace WinFormsApp1
                 // Проверяем, полностью ли выделена строка
                 if (selectedRow.Selected)
                 {
-                    string firstName = selectedRow.Cells["firs_name"].Value?.ToString();
+                    string firstName = selectedRow.Cells["first_name"].Value?.ToString();
                     int id = -1;
 
                     // Безопасное преобразование id

@@ -81,7 +81,7 @@ namespace WinFormsApp1
 
                     AuthUser authUser = new AuthUser(
                         id,
-                        row["firs_name"]?.ToString() ?? "",
+                        row["first_name"]?.ToString() ?? "",
                         row["middle_name"]?.ToString() ?? "",
                         row["last_name"]?.ToString() ?? "",
                         row["login"]?.ToString() ?? "",

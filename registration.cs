@@ -9,6 +9,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace WinFormsApp1
 {
@@ -17,6 +18,8 @@ namespace WinFormsApp1
         public registration()
         {
             InitializeComponent();
+            passwordtextBox.UseSystemPasswordChar = true;
+            repasswordtextBox3.UseSystemPasswordChar=true;
         }
 
 
@@ -50,14 +53,42 @@ namespace WinFormsApp1
                 MessageBox.Show("Введите имя");
                 return;
             }
+            if (nameTextbox.Text.Length < 2)
+            {
+                MessageBox.Show("Имя не должно быть из 1 символа");
+                return;
+            }
+            if(lastnameTextbox.Text.Length < 2)
+            {
+                MessageBox.Show("Фамилия не может состоять из 1 символа"); return;
+            }
             if (lastnameTextbox.Text == "")
             {
                 MessageBox.Show("Введите фамилию");
                 return;
             }
+            if (lastnameTextbox.Text.Length < 2)
+            {
+                MessageBox.Show("Фамилия не может состоять из 1 символа"); return;
+            }
+            if (functions.ContainsDigit(lastnameTextbox.Text))
+            {
+                MessageBox.Show("В фамилии не могут быть цифры");
+                return;
+            }
+            if (functions.ContainsDigit(nameTextbox.Text))
+            {
+                MessageBox.Show("Имя не может состоять из цифр");
+                return;
+            }
             if (passwordtextBox.Text == "")
             {
                 MessageBox.Show("Введите пароль");
+                return;
+            }
+            if(passwordtextBox.Text.Length < 8)
+            {
+                MessageBox.Show("Пароль должен содержать минимум 8 символов");
                 return;
             }
             if (repasswordtextBox3.Text == "")
@@ -69,8 +100,13 @@ namespace WinFormsApp1
             if (passwordtextBox.Text != repasswordtextBox3.Text)
             {
                 MessageBox.Show("Пароли не совпадают");
+                passwordtextBox.Text = "";
+                repasswordtextBox3.Text = "";
                 return;
             }
+
+            
+
 
             if (isUserExists())
             {
@@ -80,7 +116,7 @@ namespace WinFormsApp1
 
 
             DBConnection db = new DBConnection();
-            MySqlCommand command = new MySqlCommand("INSERT INTO `mountain`.`users` (`firs_name`, `middle_name`, `last_name`, `login`, `pass`, `role_id`) VALUES (@firstName, @middleName, @lastName, @uL, @uP, 1);", db.getConnection());
+            MySqlCommand command = new MySqlCommand("INSERT INTO `mountain`.`users` (`first_name`, `middle_name`, `last_name`, `login`, `pass`, `role_id`) VALUES (@firstName, @middleName, @lastName, @uL, @uP, 1);", db.getConnection());
             command.Parameters.Add("@firstName", MySqlDbType.VarChar).Value = nameTextbox.Text;
             if (middleNametextBox.Text == "")
             {

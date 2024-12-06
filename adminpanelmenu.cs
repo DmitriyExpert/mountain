@@ -43,9 +43,18 @@ namespace WinFormsApp1
 
         private void toRedacUsers_Click(object sender, EventArgs e)
         {
-            redacUsers redUser = new redacUsers(CurrentUser);  
+            redacUsers redUser = new redacUsers(CurrentUser);
             redUser.Show();
             this.Close();
         }
+
+        private void toRedacRoles_Click(object sender, EventArgs e)
+        {
+            redacRoles redRoles = new redacRoles(CurrentUser);
+            redRoles.Show();
+            this.Close();
+        }
+
+        
     }
 }

@@ -19,6 +19,9 @@
     <Compile Update="menu.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="redacRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="redacUsers.cs">
       <SubType>Form</SubType>
     </Compile>

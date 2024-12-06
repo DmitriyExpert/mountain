@@ -50,7 +50,6 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            comboBox1 = new ComboBox();
             label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureToCabinet).BeginInit();
@@ -146,6 +145,7 @@
             // 
             // backtomenu
             // 
+            backtomenu.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             backtomenu.BackgroundImage = Properties.Resources.backtomenu;
             backtomenu.Cursor = Cursors.Hand;
             backtomenu.Location = new Point(12, 958);
@@ -320,24 +320,18 @@
             label3.TabIndex = 47;
             label3.Text = "Запрос на смену расписания";
             // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" });
-            comboBox1.Location = new Point(197, 553);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(284, 23);
-            comboBox1.TabIndex = 49;
-            // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = SystemColors.ControlLightLight;
-            label4.Location = new Point(197, 526);
+            label4.BackColor = SystemColors.ButtonHighlight;
+            label4.Font = new Font("Arial", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label4.ForeColor = Color.LimeGreen;
+            label4.Location = new Point(197, 548);
             label4.Name = "label4";
-            label4.Size = new Size(49, 15);
-            label4.TabIndex = 50;
-            label4.Text = "Период";
+            label4.Size = new Size(367, 24);
+            label4.TabIndex = 0;
+            label4.Text = "Расписание на декабрь 2024 года";
+            label4.Click += label4_Click;
             // 
             // cabinet
             // 
@@ -346,7 +340,6 @@
             ClientSize = new Size(1904, 1041);
             ControlBox = false;
             Controls.Add(label4);
-            Controls.Add(comboBox1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -406,7 +399,6 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private ComboBox comboBox1;
         private Label label4;
     }
 }
