@@ -429,6 +429,7 @@ namespace WinFormsApp1
                             else
                             {
                                 MessageBox.Show("Не удалось удалить запись о смене");
+                                return;
                             }
                         }
 
