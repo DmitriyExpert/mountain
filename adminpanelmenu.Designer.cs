@@ -113,9 +113,9 @@
             toRedacRoles.ForeColor = SystemColors.MenuHighlight;
             toRedacRoles.Location = new Point(330, 123);
             toRedacRoles.Name = "toRedacRoles";
-            toRedacRoles.Size = new Size(169, 19);
+            toRedacRoles.Size = new Size(215, 19);
             toRedacRoles.TabIndex = 53;
-            toRedacRoles.Text = "Управление ролями";
+            toRedacRoles.Text = "Управление автосменами";
             toRedacRoles.Click += toRedacRoles_Click;
             // 
             // logoiconRegister

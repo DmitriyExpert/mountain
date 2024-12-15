@@ -126,5 +126,10 @@ namespace WinFormsApp1
                 passwordtextBox.UseSystemPasswordChar = true;
             }
         }
+
+        private void logintextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
