@@ -41,6 +41,12 @@
             labelPeriodsTime = new Label();
             comboBoxPeriodsTime = new ComboBox();
             button1 = new Button();
+            labelDeleteAutoShift = new Label();
+            label1 = new Label();
+            comboBoxForDeleteRoles = new ComboBox();
+            label2 = new Label();
+            comboBoxDeleteForPeriodsTime = new ComboBox();
+            buttonDelete = new Button();
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
             ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).BeginInit();
             SuspendLayout();
@@ -164,6 +170,7 @@
             comboBoxPeriodsTime.Size = new Size(177, 23);
             comboBoxPeriodsTime.TabIndex = 60;
             comboBoxPeriodsTime.Visible = false;
+            comboBoxPeriodsTime.SelectedIndexChanged += comboBoxPeriodsTime_SelectedIndexChanged;
             // 
             // button1
             // 
@@ -180,6 +187,71 @@
             button1.Visible = false;
             button1.Click += button1_Click;
             // 
+            // labelDeleteAutoShift
+            // 
+            labelDeleteAutoShift.AutoSize = true;
+            labelDeleteAutoShift.BackColor = Color.Transparent;
+            labelDeleteAutoShift.Font = new Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelDeleteAutoShift.ForeColor = Color.Red;
+            labelDeleteAutoShift.Location = new Point(34, 384);
+            labelDeleteAutoShift.Name = "labelDeleteAutoShift";
+            labelDeleteAutoShift.Size = new Size(425, 32);
+            labelDeleteAutoShift.TabIndex = 62;
+            labelDeleteAutoShift.Text = "Удаление автосмен для ролей";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label1.Location = new Point(34, 441);
+            label1.Name = "label1";
+            label1.Size = new Size(172, 24);
+            label1.TabIndex = 63;
+            label1.Text = "Выберите роль";
+            // 
+            // comboBoxForDeleteRoles
+            // 
+            comboBoxForDeleteRoles.FormattingEnabled = true;
+            comboBoxForDeleteRoles.Location = new Point(34, 497);
+            comboBoxForDeleteRoles.Name = "comboBoxForDeleteRoles";
+            comboBoxForDeleteRoles.Size = new Size(172, 23);
+            comboBoxForDeleteRoles.TabIndex = 64;
+            comboBoxForDeleteRoles.SelectedIndexChanged += comboBoxForDeleteRoles_SelectedIndexChanged;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Arial", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label2.Location = new Point(279, 441);
+            label2.Name = "label2";
+            label2.Size = new Size(517, 24);
+            label2.TabIndex = 65;
+            label2.Text = "Выберите временной промежуток для удаления";
+            // 
+            // comboBoxDeleteForPeriodsTime
+            // 
+            comboBoxDeleteForPeriodsTime.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxDeleteForPeriodsTime.FormattingEnabled = true;
+            comboBoxDeleteForPeriodsTime.Location = new Point(282, 497);
+            comboBoxDeleteForPeriodsTime.Name = "comboBoxDeleteForPeriodsTime";
+            comboBoxDeleteForPeriodsTime.Size = new Size(177, 23);
+            comboBoxDeleteForPeriodsTime.TabIndex = 66;
+            // 
+            // buttonDelete
+            // 
+            buttonDelete.BackColor = Color.Red;
+            buttonDelete.Cursor = Cursors.Hand;
+            buttonDelete.FlatStyle = FlatStyle.Flat;
+            buttonDelete.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            buttonDelete.ForeColor = SystemColors.ButtonFace;
+            buttonDelete.Location = new Point(34, 551);
+            buttonDelete.Name = "buttonDelete";
+            buttonDelete.Size = new Size(136, 38);
+            buttonDelete.TabIndex = 67;
+            buttonDelete.Text = "Удалить";
+            buttonDelete.UseVisualStyleBackColor = false;
+            buttonDelete.Click += buttonDelete_Click;
+            // 
             // redacRoles
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -187,6 +259,12 @@
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(1904, 1041);
             ControlBox = false;
+            Controls.Add(buttonDelete);
+            Controls.Add(comboBoxDeleteForPeriodsTime);
+            Controls.Add(label2);
+            Controls.Add(comboBoxForDeleteRoles);
+            Controls.Add(label1);
+            Controls.Add(labelDeleteAutoShift);
             Controls.Add(button1);
             Controls.Add(comboBoxPeriodsTime);
             Controls.Add(labelPeriodsTime);
@@ -222,5 +300,11 @@
         private Label labelPeriodsTime;
         private ComboBox comboBoxPeriodsTime;
         private Button button1;
+        private Label labelDeleteAutoShift;
+        private Label label1;
+        private ComboBox comboBoxForDeleteRoles;
+        private Label label2;
+        private ComboBox comboBoxDeleteForPeriodsTime;
+        private Button buttonDelete;
     }
 }

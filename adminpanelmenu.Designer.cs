@@ -36,6 +36,7 @@
             toRedacUsers = new Label();
             toRedacRoles = new Label();
             logoiconRegister = new PictureBox();
+            linktoredacRolesMain = new Label();
             ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
             SuspendLayout();
@@ -113,9 +114,9 @@
             toRedacRoles.ForeColor = SystemColors.MenuHighlight;
             toRedacRoles.Location = new Point(330, 123);
             toRedacRoles.Name = "toRedacRoles";
-            toRedacRoles.Size = new Size(169, 19);
+            toRedacRoles.Size = new Size(215, 19);
             toRedacRoles.TabIndex = 53;
-            toRedacRoles.Text = "Управление ролями";
+            toRedacRoles.Text = "Управление автосменами";
             toRedacRoles.Click += toRedacRoles_Click;
             // 
             // logoiconRegister
@@ -127,6 +128,19 @@
             logoiconRegister.TabIndex = 54;
             logoiconRegister.TabStop = false;
             // 
+            // linktoredacRolesMain
+            // 
+            linktoredacRolesMain.AutoSize = true;
+            linktoredacRolesMain.Cursor = Cursors.Hand;
+            linktoredacRolesMain.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            linktoredacRolesMain.ForeColor = SystemColors.MenuHighlight;
+            linktoredacRolesMain.Location = new Point(594, 123);
+            linktoredacRolesMain.Name = "linktoredacRolesMain";
+            linktoredacRolesMain.Size = new Size(169, 19);
+            linktoredacRolesMain.TabIndex = 55;
+            linktoredacRolesMain.Text = "Управление ролями";
+            linktoredacRolesMain.Click += linktoredacRolesMain_Click;
+            // 
             // adminpanelmenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -134,6 +148,7 @@
             BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(1904, 1041);
             ControlBox = false;
+            Controls.Add(linktoredacRolesMain);
             Controls.Add(logoiconRegister);
             Controls.Add(toRedacRoles);
             Controls.Add(toRedacUsers);
@@ -159,5 +174,6 @@
         private Label toRedacUsers;
         private Label toRedacRoles;
         private PictureBox logoiconRegister;
+        private Label linktoredacRolesMain;
     }
 }
