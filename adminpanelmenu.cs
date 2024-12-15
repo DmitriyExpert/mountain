@@ -55,6 +55,11 @@ namespace WinFormsApp1
             this.Close();
         }
 
-        
+        private void linktoredacRolesMain_Click(object sender, EventArgs e)
+        {
+            redacRolesMain redacRolesMain = new redacRolesMain(CurrentUser);
+            redacRolesMain.Show();
+            this.Close();
+        }
     }
 }

@@ -230,3 +230,4 @@ C:\Users\timar\OneDrive\Рабочий стол\proekyt\mountain\obj\Debug\net8.
 C:\Users\timar\OneDrive\Рабочий стол\proekyt\mountain\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
 D:\VSproject\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.contacts.resources
 D:\VSproject\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.redacRoles.resources
+D:\VSproject\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.redacRolesMain.resources
