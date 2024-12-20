@@ -42,6 +42,11 @@
             label3 = new Label();
             buttonRoleSearch = new Button();
             roleSearchField = new ComboBox();
+<<<<<<< HEAD
+            ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).BeginInit();
+=======
             pictureBox1 = new PictureBox();
             label4 = new Label();
             idForRedacUser = new Label();
@@ -56,6 +61,7 @@
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             SuspendLayout();
             // 
             // toClient
@@ -126,7 +132,10 @@
             dataGridViewUsers.Name = "dataGridViewUsers";
             dataGridViewUsers.Size = new Size(531, 349);
             dataGridViewUsers.TabIndex = 57;
+<<<<<<< HEAD
+=======
             dataGridViewUsers.CellContentClick += dataGridViewUsers_CellContentClick;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // label1
             // 
@@ -147,7 +156,10 @@
             buttonIdSearch.TabIndex = 60;
             buttonIdSearch.Text = "Поиск";
             buttonIdSearch.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
+=======
             buttonIdSearch.Click += buttonIdSearch_Click_1;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // idSearchField
             // 
@@ -183,7 +195,10 @@
             buttonRoleSearch.TabIndex = 65;
             buttonRoleSearch.Text = "Поиск";
             buttonRoleSearch.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
+=======
             buttonRoleSearch.Click += buttonRoleSearch_Click;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // roleSearchField
             // 
@@ -193,6 +208,8 @@
             roleSearchField.Size = new Size(284, 23);
             roleSearchField.TabIndex = 66;
             // 
+<<<<<<< HEAD
+=======
             // pictureBox1
             // 
             pictureBox1.BackColor = SystemColors.ScrollBar;
@@ -302,6 +319,7 @@
             buttonChangeRoles.Visible = false;
             buttonChangeRoles.Click += buttonChangeRoles_Click;
             // 
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // redacUsers
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -309,6 +327,8 @@
             BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(1904, 1041);
             ControlBox = false;
+<<<<<<< HEAD
+=======
             Controls.Add(buttonChangeRoles);
             Controls.Add(rolesComboBox);
             Controls.Add(label5);
@@ -319,6 +339,7 @@
             Controls.Add(idForRedacUser);
             Controls.Add(label4);
             Controls.Add(pictureBox1);
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             Controls.Add(roleSearchField);
             Controls.Add(buttonRoleSearch);
             Controls.Add(label3);
@@ -338,7 +359,10 @@
             ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).EndInit();
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).EndInit();
+<<<<<<< HEAD
+=======
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             ResumeLayout(false);
             PerformLayout();
         }
@@ -358,6 +382,8 @@
         private Label label3;
         private Button buttonRoleSearch;
         private ComboBox roleSearchField;
+<<<<<<< HEAD
+=======
         private PictureBox pictureBox1;
         private Label label4;
         private Label idForRedacUser;
@@ -368,5 +394,6 @@
         private Label label5;
         private ComboBox rolesComboBox;
         private Button buttonChangeRoles;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
     }
 }

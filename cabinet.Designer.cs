@@ -50,6 +50,10 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+<<<<<<< HEAD
+            comboBox1 = new ComboBox();
+=======
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             label4 = new Label();
             tableLayoutPanel1 = new TableLayoutPanel();
             button_prev = new Button();
@@ -102,7 +106,10 @@
             panel.Size = new Size(185, 25);
             panel.TabIndex = 30;
             panel.Text = "Панель управления";
+<<<<<<< HEAD
+=======
             panel.Click += panel_Click;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // pictureToCabinet
             // 
@@ -166,7 +173,10 @@
             // 
             // backtomenu
             // 
+<<<<<<< HEAD
+=======
             backtomenu.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             backtomenu.BackgroundImage = Properties.Resources.backtomenu;
             backtomenu.Cursor = Cursors.Hand;
             backtomenu.Location = new Point(12, 958);
@@ -212,7 +222,10 @@
             pictureBox4.Size = new Size(69, 69);
             pictureBox4.TabIndex = 36;
             pictureBox4.TabStop = false;
+<<<<<<< HEAD
+=======
             pictureBox4.Click += pictureBox4_Click;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // toContact
             // 
@@ -229,7 +242,10 @@
             toContact.Size = new Size(48, 48);
             toContact.TabIndex = 37;
             toContact.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+=======
             toContact.Click += toContact_Click;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // labelCabinetTitle
             // 
@@ -343,6 +359,26 @@
             label3.Text = "Запрос на смену расписания";
             label3.Click += label3_Click;
             // 
+<<<<<<< HEAD
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" });
+            comboBox1.Location = new Point(197, 553);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(284, 23);
+            comboBox1.TabIndex = 49;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = SystemColors.ControlLightLight;
+            label4.Location = new Point(197, 526);
+            label4.Name = "label4";
+            label4.Size = new Size(49, 15);
+            label4.TabIndex = 50;
+            label4.Text = "Период";
+=======
             // label4
             // 
             label4.AutoSize = true;
@@ -355,6 +391,7 @@
             label4.TabIndex = 0;
             label4.Text = "Расписание на декабрь 2024 года";
             label4.Click += label4_Click;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // tableLayoutPanel1
             // 
@@ -599,6 +636,10 @@
             Controls.Add(button_prev);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(label4);
+<<<<<<< HEAD
+            Controls.Add(comboBox1);
+=======
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -661,6 +702,10 @@
         private Label label1;
         private Label label2;
         private Label label3;
+<<<<<<< HEAD
+        private ComboBox comboBox1;
+=======
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
         private Label label4;
         private TableLayoutPanel tableLayoutPanel1;
         private Button button_prev;

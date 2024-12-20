@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+<<<<<<< HEAD
+=======
 using System.Globalization;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,13 +28,23 @@ namespace WinFormsApp1
         public cabinet(AuthUser CurrentUser)
         {
             InitializeComponent();
+<<<<<<< HEAD
+<<<<<<< HEAD
+            if(CurrentUser.RoleId == 2)
+            {
+                panel.Visible = true;
+            } else
+=======
+=======
             button_next.Click += _nextWeekButton_Click;
             button_prev.Click += _prevWeekButton_Click;
+>>>>>>> origin/main
             if (CurrentUser.RoleId == 2)
             {
                 panel.Visible = true;
             }
             else
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             {
                 panel.Visible = false;
             }
@@ -41,9 +54,13 @@ namespace WinFormsApp1
 
             MySqlCommand command = new MySqlCommand("SELECT role_name FROM mountain.roles where `id` = @parseId", db.getConnection());
             command.Parameters.Add("@parseId", MySqlDbType.VarChar).Value = Convert.ToString(CurrentUser.RoleId);
+<<<<<<< HEAD
+            
+=======
 
             adapter.SelectCommand = command;
             adapter.Fill(table);
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
 
             if (table.Rows.Count > 0)
             {
@@ -54,20 +71,41 @@ namespace WinFormsApp1
             }
             else
             {
+<<<<<<< HEAD
+                labelProff.Text = CurrentUser.Id.ToString();
+            }
+
+            fioUser.Text = CurrentUser.LastName + " " + CurrentUser.FirsName + " " + CurrentUser.MiddleName;
+=======
                 labelProff.Text = "Ошибка";
             }
 
             fioUser.Text = CurrentUser.LastName + " " + CurrentUser.FirstName + " " + CurrentUser.MiddleName;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             identifyUser.Text = CurrentUser.Id.ToString() + ' ' + "-";
 
             _currUser = CurrentUser;
             labelVisible = this.panel;
             functions.SetCurrentUser(_currUser);
             functions.panelVisible(this, EventArgs.Empty, labelVisible);
+<<<<<<< HEAD
+        }
+
+
+=======
 
 
         }
 
+<<<<<<< HEAD
+
+
+
+
+
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+=======
+>>>>>>> origin/main
         private void closeBtnRegister_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -177,6 +215,8 @@ namespace WinFormsApp1
             this.Close();
             editme.Show();
         }
+<<<<<<< HEAD
+=======
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -203,6 +243,9 @@ namespace WinFormsApp1
         {
 
         }
+<<<<<<< HEAD
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+=======
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -379,5 +422,6 @@ namespace WinFormsApp1
                 default: return shiftType;
             }
         }
+>>>>>>> origin/main
     }
 }

@@ -1,5 +1,47 @@
 {
   "Version": 1,
+<<<<<<< HEAD
+  "WorkspaceRootPath": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|c:\\users\\timar\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|c:\\users\\timar\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|c:\\users\\timar\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|c:\\users\\timar\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\registration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:registration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|c:\\users\\timar\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|c:\\users\\timar\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\cabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:cabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\cabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+=======
   "WorkspaceRootPath": "D:\\VSproject\\WinFormsApp1\\",
   "Documents": [
     {
@@ -35,8 +77,30 @@
       "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\index.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:index.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\index.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:index.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\contacts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:contacts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\contacts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:contacts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\cabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:cabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
       "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|d:\\vsproject\\winformsapp1\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> origin/main
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +110,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
+<<<<<<< HEAD
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+=======
+          "SelectedChildIndex": 6,
+=======
           "SelectedChildIndex": 12,
+>>>>>>> origin/main
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,6 +132,7 @@
             },
             {
               "$type": "Bookmark",
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
@@ -66,6 +141,140 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+<<<<<<< HEAD
+              "DocumentIndex": 2,
+              "Title": "registration.cs",
+              "DocumentMoniker": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\registration.cs",
+              "RelativeDocumentMoniker": "registration.cs",
+              "ToolTip": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\registration.cs",
+              "RelativeToolTip": "registration.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAADgv18AAABxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T20:29:26.645Z",
+=======
+              "DocumentIndex": 4,
+              "Title": "auth.cs",
+              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\auth.cs",
+              "RelativeDocumentMoniker": "auth.cs",
+              "ToolTip": "D:\\VSproject\\WinFormsApp1\\auth.cs",
+              "RelativeToolTip": "auth.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAA0wEMAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T12:52:35.387Z",
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\Class1.cs",
+              "RelativeDocumentMoniker": "Class1.cs",
+              "ToolTip": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\Class1.cs",
+              "RelativeToolTip": "Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T20:18:58.093Z",
+              "EditorCaption": ""
+=======
+              "DocumentIndex": 5,
+              "Title": "auth.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\auth.cs",
+              "RelativeDocumentMoniker": "auth.cs",
+              "ToolTip": "D:\\VSproject\\WinFormsApp1\\auth.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "auth.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T12:52:32.201Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+<<<<<<< HEAD
+              "Title": "auth.cs",
+              "DocumentMoniker": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\auth.cs",
+              "RelativeDocumentMoniker": "auth.cs",
+              "ToolTip": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\auth.cs",
+              "RelativeToolTip": "auth.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T20:13:38.698Z",
+=======
+              "Title": "redacRolesMain.cs",
+              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\redacRolesMain.cs",
+              "RelativeDocumentMoniker": "redacRolesMain.cs",
+              "ToolTip": "D:\\VSproject\\WinFormsApp1\\redacRolesMain.cs",
+              "RelativeToolTip": "redacRolesMain.cs",
+              "ViewState": "AQIAAJEAAAAAAAAAAAAmwL4AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T12:41:17.626Z",
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+<<<<<<< HEAD
+              "Title": "auth.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\auth.cs",
+              "RelativeDocumentMoniker": "auth.cs",
+              "ToolTip": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\auth.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "auth.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T20:13:30.04Z",
+=======
+              "Title": "redacRolesMain.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\redacRolesMain.cs",
+              "RelativeDocumentMoniker": "redacRolesMain.cs",
+              "ToolTip": "D:\\VSproject\\WinFormsApp1\\redacRolesMain.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "redacRolesMain.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T12:38:39.718Z",
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 5,
+              "Title": "registration.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\registration.Designer.cs",
+              "RelativeDocumentMoniker": "registration.Designer.cs",
+              "ToolTip": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\registration.Designer.cs",
+              "RelativeToolTip": "registration.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T20:13:15.129Z",
+=======
+              "DocumentIndex": 6,
+              "Title": "editme.cs",
+              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\editme.cs",
+              "RelativeDocumentMoniker": "editme.cs",
+              "ToolTip": "D:\\VSproject\\WinFormsApp1\\editme.cs",
+              "RelativeToolTip": "editme.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAuwEQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T01:16:27.566Z",
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 4,
+              "Title": "registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\registration.cs",
+              "RelativeDocumentMoniker": "registration.cs",
+              "ToolTip": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T20:13:01.275Z",
+=======
+=======
+>>>>>>> origin/main
               "DocumentIndex": 2,
               "Title": "redacRoles.cs",
               "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\redacRoles.cs",
@@ -86,11 +295,83 @@
               "ToolTip": "D:\\VSproject\\WinFormsApp1\\redacRoles.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "redacRoles.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
+              "WhenOpened": "2024-12-06T00:06:10.845Z",
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+=======
               "WhenOpened": "2024-12-20T13:46:55.771Z",
+>>>>>>> origin/main
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 8,
+<<<<<<< HEAD
+              "Title": "cabinet.cs",
+              "DocumentMoniker": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\cabinet.cs",
+              "RelativeDocumentMoniker": "cabinet.cs",
+              "ToolTip": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\cabinet.cs",
+              "RelativeToolTip": "cabinet.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwC0AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T15:53:44.413Z",
+=======
+              "Title": "DBConnection.cs",
+              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\DBConnection.cs",
+              "RelativeDocumentMoniker": "DBConnection.cs",
+              "ToolTip": "D:\\VSproject\\WinFormsApp1\\DBConnection.cs",
+              "RelativeToolTip": "DBConnection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T01:16:17.843Z",
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 9,
+              "Title": "cabinet.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\cabinet.cs",
+              "RelativeDocumentMoniker": "cabinet.cs",
+              "ToolTip": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\mountain-main\\cabinet.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "..\\..\\mountain-main\\cabinet.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T15:53:37.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DBConnection.cs",
+              "DocumentMoniker": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\DBConnection.cs",
+              "RelativeDocumentMoniker": "DBConnection.cs",
+              "ToolTip": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\DBConnection.cs",
+              "RelativeToolTip": "DBConnection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T15:51:31.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\menu.cs",
+              "RelativeDocumentMoniker": "menu.cs",
+              "ToolTip": "C:\\Users\\timar\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\proekyt\\mountain\\menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T15:54:15.01Z"
+=======
+              "DocumentIndex": 7,
+              "Title": "adminpanelmenu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\adminpanelmenu.cs",
+              "RelativeDocumentMoniker": "adminpanelmenu.cs",
+              "ToolTip": "D:\\VSproject\\WinFormsApp1\\adminpanelmenu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "adminpanelmenu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T00:15:24.756Z",
+=======
               "DocumentIndex": 4,
               "Title": "requestEditSchedule.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\requestEditSchedule.cs",
@@ -99,6 +380,7 @@
               "RelativeToolTip": "requestEditSchedule.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-20T13:46:45.37Z",
+>>>>>>> origin/main
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             },
             {
@@ -173,8 +455,13 @@
               "ToolTip": "D:\\VSproject\\WinFormsApp1\\cabinet.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "cabinet.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
+              "WhenOpened": "2024-12-05T01:15:39.771Z"
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+=======
               "WhenOpened": "2024-12-15T20:49:46.229Z",
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+>>>>>>> origin/main
             }
           ]
         }

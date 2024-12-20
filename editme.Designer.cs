@@ -139,7 +139,10 @@
             toContact.Size = new Size(48, 48);
             toContact.TabIndex = 55;
             toContact.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+=======
             toContact.Click += toContact_Click;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // pictureBox4
             // 
@@ -151,7 +154,10 @@
             pictureBox4.Size = new Size(69, 69);
             pictureBox4.TabIndex = 54;
             pictureBox4.TabStop = false;
+<<<<<<< HEAD
+=======
             pictureBox4.Click += pictureBox4_Click;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // cabinetActive
             // 
@@ -218,7 +224,10 @@
             panel.Size = new Size(185, 25);
             panel.TabIndex = 48;
             panel.Text = "Панель управления";
+<<<<<<< HEAD
+=======
             panel.Click += panel_Click;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // pictureToCabinet
             // 

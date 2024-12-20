@@ -10,21 +10,27 @@
     <Compile Update="cabinet.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
+=======
     <Compile Update="contacts.cs">
       <SubType>Form</SubType>
     </Compile>
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
     <Compile Update="editme.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="menu.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
+=======
     <Compile Update="redacRoles.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="redacRolesMain.cs">
       <SubType>Form</SubType>
     </Compile>
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
     <Compile Update="redacUsers.cs">
       <SubType>Form</SubType>
     </Compile>

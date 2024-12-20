@@ -18,7 +18,10 @@ namespace WinFormsApp1
         {
             InitializeComponent();
             CurrentUser = currentUser;
+<<<<<<< HEAD
+=======
             rolesComboBox.Text = "Выберите роль, на которую хотите поменять текущую";
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
 
             DBConnection db = new DBConnection();
             db.openConnection();
@@ -31,7 +34,10 @@ namespace WinFormsApp1
             {
                 DataRow row = table.Rows[i];
                 roleSearchField.Items.Add(row["role_name"].ToString());
+<<<<<<< HEAD
+=======
                 rolesComboBox.Items.Add(row["role_name"].ToString());
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             }
             db.closeConnection();
         }
@@ -39,6 +45,8 @@ namespace WinFormsApp1
         private void redacUsers_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
+<<<<<<< HEAD
+=======
             roleSearchField.Text = "Выберите роль";
             this.dataGridViewUsers.SelectionChanged += new System.EventHandler(this.dataGridViewUsers_SelectionChanged);
 
@@ -57,6 +65,7 @@ namespace WinFormsApp1
                 MessageBox.Show("В базе данных нет пользователей");
             }
             db.closeConnection();
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
         }
 
         private void iconimg_Click(object sender, EventArgs e)
@@ -76,6 +85,10 @@ namespace WinFormsApp1
             this.Close();
         }
 
+<<<<<<< HEAD
+        
+    }
+=======
         private void buttonRoleSearch_Click(object sender, EventArgs e)
         {
             DBConnection db = new DBConnection();
@@ -304,4 +317,5 @@ namespace WinFormsApp1
         }
     }
 
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
 }
