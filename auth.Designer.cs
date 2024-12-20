@@ -165,7 +165,10 @@
             logintextBox.PlaceholderText = "Логин";
             logintextBox.Size = new Size(269, 26);
             logintextBox.TabIndex = 19;
+<<<<<<< HEAD
+=======
             logintextBox.TextChanged += logintextBox_TextChanged;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // checkBox1
             // 

@@ -31,14 +31,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminpanelmenu));
             iconimg = new Button();
             closeBtnRegister = new Button();
+<<<<<<< HEAD
+            logoiconRegister = new PictureBox();
+=======
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             AdminPanelLogo = new PictureBox();
             toClient = new Label();
             toRedacUsers = new Label();
             toRedacRoles = new Label();
+<<<<<<< HEAD
+            ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).BeginInit();
+=======
             logoiconRegister = new PictureBox();
             linktoredacRolesMain = new Label();
             ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             SuspendLayout();
             // 
             // iconimg
@@ -72,6 +81,18 @@
             closeBtnRegister.UseVisualStyleBackColor = true;
             closeBtnRegister.Click += closeBtnRegister_Click;
             // 
+<<<<<<< HEAD
+            // logoiconRegister
+            // 
+            logoiconRegister.Image = Properties.Resources.SCHEDULE_mountain;
+            logoiconRegister.Location = new Point(43, 32);
+            logoiconRegister.Name = "logoiconRegister";
+            logoiconRegister.Size = new Size(298, 37);
+            logoiconRegister.TabIndex = 47;
+            logoiconRegister.TabStop = false;
+            // 
+=======
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // AdminPanelLogo
             // 
             AdminPanelLogo.Image = (Image)resources.GetObject("AdminPanelLogo.Image");
@@ -114,6 +135,11 @@
             toRedacRoles.ForeColor = SystemColors.MenuHighlight;
             toRedacRoles.Location = new Point(330, 123);
             toRedacRoles.Name = "toRedacRoles";
+<<<<<<< HEAD
+            toRedacRoles.Size = new Size(169, 19);
+            toRedacRoles.TabIndex = 53;
+            toRedacRoles.Text = "Управление ролями";
+=======
             toRedacRoles.Size = new Size(215, 19);
             toRedacRoles.TabIndex = 53;
             toRedacRoles.Text = "Управление автосменами";
@@ -140,6 +166,7 @@
             linktoredacRolesMain.TabIndex = 55;
             linktoredacRolesMain.Text = "Управление ролями";
             linktoredacRolesMain.Click += linktoredacRolesMain_Click;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // adminpanelmenu
             // 
@@ -148,19 +175,31 @@
             BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(1904, 1041);
             ControlBox = false;
+<<<<<<< HEAD
+=======
             Controls.Add(linktoredacRolesMain);
             Controls.Add(logoiconRegister);
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             Controls.Add(toRedacRoles);
             Controls.Add(toRedacUsers);
             Controls.Add(toClient);
             Controls.Add(AdminPanelLogo);
             Controls.Add(iconimg);
             Controls.Add(closeBtnRegister);
+<<<<<<< HEAD
+            Controls.Add(logoiconRegister);
+            Name = "adminpanelmenu";
+            Text = "adminpanelmenu";
+            Load += adminpanelmenu_Load;
+            ((System.ComponentModel.ISupportInitialize)logoiconRegister).EndInit();
+            ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).EndInit();
+=======
             Name = "adminpanelmenu";
             Text = "adminpanelmenu";
             Load += adminpanelmenu_Load;
             ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).EndInit();
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).EndInit();
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             ResumeLayout(false);
             PerformLayout();
         }
@@ -169,11 +208,18 @@
 
         private Button iconimg;
         private Button closeBtnRegister;
+<<<<<<< HEAD
+        private PictureBox logoiconRegister;
+=======
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
         private PictureBox AdminPanelLogo;
         private Label toClient;
         private Label toRedacUsers;
         private Label toRedacRoles;
+<<<<<<< HEAD
+=======
         private PictureBox logoiconRegister;
         private Label linktoredacRolesMain;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
     }
 }
