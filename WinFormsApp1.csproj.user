@@ -37,5 +37,8 @@
     <Compile Update="requestEditSchedule.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="whowithme.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

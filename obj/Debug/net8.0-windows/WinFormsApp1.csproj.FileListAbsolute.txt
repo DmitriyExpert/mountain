@@ -232,3 +232,4 @@ D:\VSproject\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.contacts.resourc
 D:\VSproject\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.redacRoles.resources
 D:\VSproject\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.redacRolesMain.resources
 D:\VSproject\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.requestEditSchedule.resources
+D:\VSproject\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.whowithme.resources
