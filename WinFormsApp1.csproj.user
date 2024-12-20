@@ -40,5 +40,8 @@
     <Compile Update="index.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="requestEditSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
