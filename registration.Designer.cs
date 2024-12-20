@@ -133,7 +133,11 @@
             // 
             repasswordtextBox3.Cursor = Cursors.IBeam;
             repasswordtextBox3.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+<<<<<<< HEAD
             repasswordtextBox3.Location = new Point(182, 501);
+=======
+            repasswordtextBox3.Location = new Point(182, 497);
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             repasswordtextBox3.Name = "repasswordtextBox3";
             repasswordtextBox3.PlaceholderText = "Введите пароль еще раз";
             repasswordtextBox3.Size = new Size(269, 26);

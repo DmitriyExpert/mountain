@@ -81,7 +81,11 @@ namespace WinFormsApp1
 
                     AuthUser authUser = new AuthUser(
                         id,
+<<<<<<< HEAD
                         row["firs_name"]?.ToString() ?? "",
+=======
+                        row["first_name"]?.ToString() ?? "",
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
                         row["middle_name"]?.ToString() ?? "",
                         row["last_name"]?.ToString() ?? "",
                         row["login"]?.ToString() ?? "",
@@ -126,5 +130,13 @@ namespace WinFormsApp1
                 passwordtextBox.UseSystemPasswordChar = true;
             }
         }
+<<<<<<< HEAD
+=======
+
+        private void logintextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
     }
 }

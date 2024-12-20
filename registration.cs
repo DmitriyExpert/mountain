@@ -9,6 +9,10 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
+=======
+using System.Text.RegularExpressions;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
 
 namespace WinFormsApp1
 {
@@ -17,6 +21,11 @@ namespace WinFormsApp1
         public registration()
         {
             InitializeComponent();
+<<<<<<< HEAD
+=======
+            passwordtextBox.UseSystemPasswordChar = true;
+            repasswordtextBox3.UseSystemPasswordChar=true;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
         }
 
 
@@ -50,16 +59,53 @@ namespace WinFormsApp1
                 MessageBox.Show("Введите имя");
                 return;
             }
+<<<<<<< HEAD
+=======
+            if (nameTextbox.Text.Length < 2)
+            {
+                MessageBox.Show("Имя не должно быть из 1 символа");
+                return;
+            }
+            if(lastnameTextbox.Text.Length < 2)
+            {
+                MessageBox.Show("Фамилия не может состоять из 1 символа"); return;
+            }
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             if (lastnameTextbox.Text == "")
             {
                 MessageBox.Show("Введите фамилию");
                 return;
             }
+<<<<<<< HEAD
+=======
+            if (lastnameTextbox.Text.Length < 2)
+            {
+                MessageBox.Show("Фамилия не может состоять из 1 символа"); return;
+            }
+            if (functions.ContainsDigit(lastnameTextbox.Text))
+            {
+                MessageBox.Show("В фамилии не могут быть цифры");
+                return;
+            }
+            if (functions.ContainsDigit(nameTextbox.Text))
+            {
+                MessageBox.Show("Имя не может состоять из цифр");
+                return;
+            }
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             if (passwordtextBox.Text == "")
             {
                 MessageBox.Show("Введите пароль");
                 return;
             }
+<<<<<<< HEAD
+=======
+            if(passwordtextBox.Text.Length < 8)
+            {
+                MessageBox.Show("Пароль должен содержать минимум 8 символов");
+                return;
+            }
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             if (repasswordtextBox3.Text == "")
             {
                 MessageBox.Show("Введите повторный пароль");
@@ -69,9 +115,20 @@ namespace WinFormsApp1
             if (passwordtextBox.Text != repasswordtextBox3.Text)
             {
                 MessageBox.Show("Пароли не совпадают");
+<<<<<<< HEAD
                 return;
             }
 
+=======
+                passwordtextBox.Text = "";
+                repasswordtextBox3.Text = "";
+                return;
+            }
+
+            
+
+
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             if (isUserExists())
             {
                 return;
@@ -80,7 +137,11 @@ namespace WinFormsApp1
 
 
             DBConnection db = new DBConnection();
+<<<<<<< HEAD
             MySqlCommand command = new MySqlCommand("INSERT INTO `mountain`.`users` (`firs_name`, `middle_name`, `last_name`, `login`, `pass`, `role_id`) VALUES (@firstName, @middleName, @lastName, @uL, @uP, 1);", db.getConnection());
+=======
+            MySqlCommand command = new MySqlCommand("INSERT INTO `mountain`.`users` (`first_name`, `middle_name`, `last_name`, `login`, `pass`, `role_id`) VALUES (@firstName, @middleName, @lastName, @uL, @uP, 1);", db.getConnection());
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             command.Parameters.Add("@firstName", MySqlDbType.VarChar).Value = nameTextbox.Text;
             if (middleNametextBox.Text == "")
             {

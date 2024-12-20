@@ -42,9 +42,26 @@
             label3 = new Label();
             buttonRoleSearch = new Button();
             roleSearchField = new ComboBox();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).BeginInit();
+=======
+            pictureBox1 = new PictureBox();
+            label4 = new Label();
+            idForRedacUser = new Label();
+            idishnik = new Label();
+            changedRoles = new Button();
+            deleteUser = new Button();
+            passAdmText = new TextBox();
+            label5 = new Label();
+            rolesComboBox = new ComboBox();
+            buttonChangeRoles = new Button();
+            ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             SuspendLayout();
             // 
             // toClient
@@ -115,6 +132,10 @@
             dataGridViewUsers.Name = "dataGridViewUsers";
             dataGridViewUsers.Size = new Size(531, 349);
             dataGridViewUsers.TabIndex = 57;
+<<<<<<< HEAD
+=======
+            dataGridViewUsers.CellContentClick += dataGridViewUsers_CellContentClick;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // label1
             // 
@@ -135,6 +156,10 @@
             buttonIdSearch.TabIndex = 60;
             buttonIdSearch.Text = "Поиск";
             buttonIdSearch.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
+=======
+            buttonIdSearch.Click += buttonIdSearch_Click_1;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // idSearchField
             // 
@@ -170,6 +195,10 @@
             buttonRoleSearch.TabIndex = 65;
             buttonRoleSearch.Text = "Поиск";
             buttonRoleSearch.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
+=======
+            buttonRoleSearch.Click += buttonRoleSearch_Click;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // roleSearchField
             // 
@@ -179,6 +208,118 @@
             roleSearchField.Size = new Size(284, 23);
             roleSearchField.TabIndex = 66;
             // 
+<<<<<<< HEAD
+=======
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = SystemColors.ScrollBar;
+            pictureBox1.Location = new Point(1073, 243);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(496, 50);
+            pictureBox1.TabIndex = 67;
+            pictureBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = SystemColors.ScrollBar;
+            label4.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label4.Location = new Point(1085, 255);
+            label4.Name = "label4";
+            label4.Size = new Size(380, 29);
+            label4.TabIndex = 68;
+            label4.Text = "Действия с пользователем id: ";
+            // 
+            // idForRedacUser
+            // 
+            idForRedacUser.AutoSize = true;
+            idForRedacUser.BackColor = SystemColors.ScrollBar;
+            idForRedacUser.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            idForRedacUser.Location = new Point(1459, 255);
+            idForRedacUser.Name = "idForRedacUser";
+            idForRedacUser.Size = new Size(0, 29);
+            idForRedacUser.TabIndex = 69;
+            // 
+            // idishnik
+            // 
+            idishnik.AutoSize = true;
+            idishnik.BackColor = SystemColors.ScrollBar;
+            idishnik.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            idishnik.Location = new Point(1465, 255);
+            idishnik.Name = "idishnik";
+            idishnik.Size = new Size(35, 29);
+            idishnik.TabIndex = 70;
+            idishnik.Text = "id";
+            idishnik.Visible = false;
+            // 
+            // changedRoles
+            // 
+            changedRoles.Cursor = Cursors.Hand;
+            changedRoles.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            changedRoles.Location = new Point(1073, 351);
+            changedRoles.Name = "changedRoles";
+            changedRoles.Size = new Size(174, 47);
+            changedRoles.TabIndex = 71;
+            changedRoles.Text = "Сменить роль";
+            changedRoles.UseVisualStyleBackColor = true;
+            changedRoles.Visible = false;
+            changedRoles.Click += changedRoles_Click;
+            // 
+            // deleteUser
+            // 
+            deleteUser.Cursor = Cursors.Hand;
+            deleteUser.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            deleteUser.ForeColor = Color.Red;
+            deleteUser.Location = new Point(1326, 351);
+            deleteUser.Name = "deleteUser";
+            deleteUser.Size = new Size(218, 47);
+            deleteUser.TabIndex = 72;
+            deleteUser.Text = "Удалить пользователя";
+            deleteUser.UseVisualStyleBackColor = true;
+            deleteUser.Visible = false;
+            deleteUser.Click += deleteUser_Click;
+            // 
+            // passAdmText
+            // 
+            passAdmText.Location = new Point(1073, 462);
+            passAdmText.Name = "passAdmText";
+            passAdmText.Size = new Size(224, 23);
+            passAdmText.TabIndex = 73;
+            passAdmText.Visible = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(1073, 444);
+            label5.Name = "label5";
+            label5.Size = new Size(187, 15);
+            label5.TabIndex = 74;
+            label5.Text = "Введите пароль администратора";
+            label5.Visible = false;
+            // 
+            // rolesComboBox
+            // 
+            rolesComboBox.FormattingEnabled = true;
+            rolesComboBox.Location = new Point(1073, 555);
+            rolesComboBox.Name = "rolesComboBox";
+            rolesComboBox.Size = new Size(357, 23);
+            rolesComboBox.TabIndex = 75;
+            rolesComboBox.Visible = false;
+            rolesComboBox.SelectedIndexChanged += rolesComboBox_SelectedIndexChanged;
+            // 
+            // buttonChangeRoles
+            // 
+            buttonChangeRoles.Cursor = Cursors.Hand;
+            buttonChangeRoles.Location = new Point(1478, 555);
+            buttonChangeRoles.Name = "buttonChangeRoles";
+            buttonChangeRoles.Size = new Size(75, 23);
+            buttonChangeRoles.TabIndex = 76;
+            buttonChangeRoles.Text = "Сменить";
+            buttonChangeRoles.UseVisualStyleBackColor = true;
+            buttonChangeRoles.Visible = false;
+            buttonChangeRoles.Click += buttonChangeRoles_Click;
+            // 
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // redacUsers
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -186,6 +327,19 @@
             BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(1904, 1041);
             ControlBox = false;
+<<<<<<< HEAD
+=======
+            Controls.Add(buttonChangeRoles);
+            Controls.Add(rolesComboBox);
+            Controls.Add(label5);
+            Controls.Add(passAdmText);
+            Controls.Add(deleteUser);
+            Controls.Add(changedRoles);
+            Controls.Add(idishnik);
+            Controls.Add(idForRedacUser);
+            Controls.Add(label4);
+            Controls.Add(pictureBox1);
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             Controls.Add(roleSearchField);
             Controls.Add(buttonRoleSearch);
             Controls.Add(label3);
@@ -205,6 +359,10 @@
             ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).EndInit();
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).EndInit();
+<<<<<<< HEAD
+=======
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             ResumeLayout(false);
             PerformLayout();
         }
@@ -224,5 +382,18 @@
         private Label label3;
         private Button buttonRoleSearch;
         private ComboBox roleSearchField;
+<<<<<<< HEAD
+=======
+        private PictureBox pictureBox1;
+        private Label label4;
+        private Label idForRedacUser;
+        private Label idishnik;
+        private Button changedRoles;
+        private Button deleteUser;
+        private TextBox passAdmText;
+        private Label label5;
+        private ComboBox rolesComboBox;
+        private Button buttonChangeRoles;
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
     }
 }

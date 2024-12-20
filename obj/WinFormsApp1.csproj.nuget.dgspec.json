@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\timar\\OneDrive\\Рабочий стол\\proekyt\\mountain\\WinFormsApp1.csproj": {}
   },
   "projects": {
@@ -15,6 +16,26 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\timar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "D:\\VSproject\\WinFormsApp1\\WinFormsApp1.csproj": {}
+  },
+  "projects": {
+    "D:\\VSproject\\WinFormsApp1\\WinFormsApp1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\VSproject\\WinFormsApp1\\WinFormsApp1.csproj",
+        "projectName": "WinFormsApp1",
+        "projectPath": "D:\\VSproject\\WinFormsApp1\\WinFormsApp1.csproj",
+        "packagesPath": "C:\\Users\\dpemv\\.nuget\\packages\\",
+        "outputPath": "D:\\VSproject\\WinFormsApp1\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\visual studio\\shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dpemv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +43,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+<<<<<<< HEAD
           "C:\\Program Files\\dotnet\\library-packs": {},
+=======
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -78,7 +102,11 @@
               "privateAssets": "none"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
         }
       }
     }
