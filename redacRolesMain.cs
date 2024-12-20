@@ -150,11 +150,11 @@ namespace WinFormsApp1
             string sqlQuery = "SELECT role_name FROM Roles";
             // Сюда добавить удаление расписаний
             string sqlDeleteShifts = "DELETE FROM mountain.shifts WHERE role_id = @idRoleShifts";
-            if(comboBoxForDeleteRoles.Text != "")
+            if (comboBoxForDeleteRoles.Text != "")
             {
                 try
                 {
-                    
+
                     DBConnection db = new DBConnection();
                     string idSelectedRole = "";
                     using (MySqlConnection connection = db.getConnection())
@@ -188,7 +188,7 @@ namespace WinFormsApp1
                             else
                             {
                                 MessageBox.Show("У данной роли нет автосмен!");
-                                
+
                             }
 
                         }
@@ -235,6 +235,13 @@ namespace WinFormsApp1
                     MessageBox.Show($"Произошла ошибка: {ex.Message}");
                 }
             }
+        }
+
+        private void toClient_Click(object sender, EventArgs e)
+        {
+            cabinet cabinet = new cabinet(CurrentUser);
+            this.Close();
+            cabinet.Show();
         }
     }
 }

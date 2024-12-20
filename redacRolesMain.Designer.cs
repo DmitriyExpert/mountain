@@ -68,6 +68,7 @@
             toClient.Size = new Size(222, 29);
             toClient.TabIndex = 58;
             toClient.Text = "Клиентская часть";
+            toClient.Click += toClient_Click;
             // 
             // AdminPanelLogo
             // 

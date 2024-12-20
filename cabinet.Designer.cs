@@ -51,6 +51,24 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            button_prev = new Button();
+            button_next = new Button();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            pictureBox5 = new PictureBox();
+            labelForCounterDay = new Label();
+            pictureBox6 = new PictureBox();
+            labelForShiftDay = new Label();
+            pictureBox7 = new PictureBox();
+            labelForShiftNight = new Label();
+            label11 = new Label();
+            labelTimePeriodDayShift = new Label();
+            labelTimePeriodNightShift = new Label();
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureToCabinet).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -59,6 +77,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxCabinetActive).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // logoiconRegister
@@ -265,6 +286,7 @@
             labelProff.Size = new Size(121, 38);
             labelProff.TabIndex = 43;
             labelProff.Text = "Роль";
+            labelProff.Click += labelProff_Click;
             // 
             // toRedact
             // 
@@ -319,6 +341,7 @@
             label3.Size = new Size(317, 24);
             label3.TabIndex = 47;
             label3.Text = "Запрос на смену расписания";
+            label3.Click += label3_Click;
             // 
             // label4
             // 
@@ -333,12 +356,248 @@
             label4.Text = "Расписание на декабрь 2024 года";
             label4.Click += label4_Click;
             // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel1.ColumnCount = 2;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.Location = new Point(146, 625);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 2;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.Size = new Size(1693, 81);
+            tableLayoutPanel1.TabIndex = 48;
+            // 
+            // button_prev
+            // 
+            button_prev.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button_prev.BackColor = SystemColors.ControlLightLight;
+            button_prev.BackgroundImage = Properties.Resources.arrow_left_table1;
+            button_prev.BackgroundImageLayout = ImageLayout.None;
+            button_prev.Cursor = Cursors.Hand;
+            button_prev.FlatAppearance.BorderSize = 0;
+            button_prev.FlatStyle = FlatStyle.Flat;
+            button_prev.Location = new Point(1707, 583);
+            button_prev.Name = "button_prev";
+            button_prev.Size = new Size(35, 35);
+            button_prev.TabIndex = 0;
+            button_prev.UseVisualStyleBackColor = false;
+            // 
+            // button_next
+            // 
+            button_next.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button_next.BackColor = SystemColors.ButtonHighlight;
+            button_next.BackgroundImage = Properties.Resources.arrow_right_table;
+            button_next.BackgroundImageLayout = ImageLayout.None;
+            button_next.Cursor = Cursors.Hand;
+            button_next.FlatAppearance.BorderSize = 0;
+            button_next.FlatStyle = FlatStyle.Flat;
+            button_next.Location = new Point(1782, 583);
+            button_next.Name = "button_next";
+            button_next.Size = new Size(40, 34);
+            button_next.TabIndex = 49;
+            button_next.UseVisualStyleBackColor = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = SystemColors.ButtonHighlight;
+            label5.Font = new Font("Arial", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label5.ForeColor = Color.LimeGreen;
+            label5.Location = new Point(197, 734);
+            label5.Name = "label5";
+            label5.Size = new Size(155, 24);
+            label5.TabIndex = 50;
+            label5.Text = "Обозначения:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = SystemColors.ButtonHighlight;
+            label6.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(197, 781);
+            label6.Name = "label6";
+            label6.Size = new Size(152, 19);
+            label6.TabIndex = 51;
+            label6.Text = "Д - дневная смена";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = SystemColors.ButtonHighlight;
+            label7.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label7.ForeColor = Color.Black;
+            label7.Location = new Point(197, 815);
+            label7.Name = "label7";
+            label7.Size = new Size(143, 19);
+            label7.TabIndex = 52;
+            label7.Text = "Н - ночная смена";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = SystemColors.ButtonHighlight;
+            label8.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label8.ForeColor = Color.Black;
+            label8.Location = new Point(197, 850);
+            label8.Name = "label8";
+            label8.Size = new Size(117, 19);
+            label8.TabIndex = 53;
+            label8.Text = "В - выходной";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = SystemColors.ButtonHighlight;
+            label9.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label9.ForeColor = Color.Black;
+            label9.Location = new Point(197, 884);
+            label9.Name = "label9";
+            label9.Size = new Size(88, 19);
+            label9.TabIndex = 54;
+            label9.Text = "О - отпуск";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = SystemColors.ButtonHighlight;
+            label10.Font = new Font("Arial", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label10.ForeColor = Color.LimeGreen;
+            label10.Location = new Point(555, 734);
+            label10.Name = "label10";
+            label10.Size = new Size(132, 24);
+            label10.TabIndex = 55;
+            label10.Text = "Статистика:";
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = SystemColors.ButtonHighlight;
+            pictureBox5.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox5.Location = new Point(555, 784);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(262, 50);
+            pictureBox5.TabIndex = 56;
+            pictureBox5.TabStop = false;
+            // 
+            // labelForCounterDay
+            // 
+            labelForCounterDay.AutoSize = true;
+            labelForCounterDay.BackColor = SystemColors.ButtonHighlight;
+            labelForCounterDay.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelForCounterDay.ForeColor = Color.Black;
+            labelForCounterDay.Location = new Point(625, 802);
+            labelForCounterDay.Name = "labelForCounterDay";
+            labelForCounterDay.Size = new Size(123, 19);
+            labelForCounterDay.TabIndex = 57;
+            labelForCounterDay.Text = "Всего смен - X";
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.BackColor = SystemColors.ButtonHighlight;
+            pictureBox6.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox6.Location = new Point(555, 853);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(262, 50);
+            pictureBox6.TabIndex = 58;
+            pictureBox6.TabStop = false;
+            // 
+            // labelForShiftDay
+            // 
+            labelForShiftDay.AutoSize = true;
+            labelForShiftDay.BackColor = SystemColors.ButtonHighlight;
+            labelForShiftDay.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelForShiftDay.ForeColor = Color.Black;
+            labelForShiftDay.Location = new Point(613, 869);
+            labelForShiftDay.Name = "labelForShiftDay";
+            labelForShiftDay.Size = new Size(148, 19);
+            labelForShiftDay.TabIndex = 59;
+            labelForShiftDay.Text = "X - дневных смен";
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = SystemColors.ButtonHighlight;
+            pictureBox7.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox7.Location = new Point(869, 784);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(262, 50);
+            pictureBox7.TabIndex = 60;
+            pictureBox7.TabStop = false;
+            // 
+            // labelForShiftNight
+            // 
+            labelForShiftNight.AutoSize = true;
+            labelForShiftNight.BackColor = SystemColors.ButtonHighlight;
+            labelForShiftNight.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelForShiftNight.ForeColor = Color.Black;
+            labelForShiftNight.Location = new Point(936, 802);
+            labelForShiftNight.Name = "labelForShiftNight";
+            labelForShiftNight.Size = new Size(138, 19);
+            labelForShiftNight.TabIndex = 61;
+            labelForShiftNight.Text = "X - ночных смен";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = SystemColors.ButtonHighlight;
+            label11.Font = new Font("Arial", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label11.ForeColor = Color.LimeGreen;
+            label11.Location = new Point(1308, 734);
+            label11.Name = "label11";
+            label11.Size = new Size(271, 24);
+            label11.TabIndex = 62;
+            label11.Text = "Временные промежутки:";
+            // 
+            // labelTimePeriodDayShift
+            // 
+            labelTimePeriodDayShift.AutoSize = true;
+            labelTimePeriodDayShift.BackColor = SystemColors.ButtonHighlight;
+            labelTimePeriodDayShift.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelTimePeriodDayShift.ForeColor = Color.Black;
+            labelTimePeriodDayShift.Location = new Point(1308, 781);
+            labelTimePeriodDayShift.Name = "labelTimePeriodDayShift";
+            labelTimePeriodDayShift.Size = new Size(175, 19);
+            labelTimePeriodDayShift.TabIndex = 63;
+            labelTimePeriodDayShift.Text = "Для дневной смены:";
+            // 
+            // labelTimePeriodNightShift
+            // 
+            labelTimePeriodNightShift.AutoSize = true;
+            labelTimePeriodNightShift.BackColor = SystemColors.ButtonHighlight;
+            labelTimePeriodNightShift.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelTimePeriodNightShift.ForeColor = Color.Black;
+            labelTimePeriodNightShift.Location = new Point(1308, 815);
+            labelTimePeriodNightShift.Name = "labelTimePeriodNightShift";
+            labelTimePeriodNightShift.Size = new Size(165, 19);
+            labelTimePeriodNightShift.TabIndex = 64;
+            labelTimePeriodNightShift.Text = "Для ночной смены:";
+            // 
             // cabinet
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1904, 1041);
             ControlBox = false;
+            Controls.Add(labelTimePeriodNightShift);
+            Controls.Add(labelTimePeriodDayShift);
+            Controls.Add(label11);
+            Controls.Add(labelForShiftNight);
+            Controls.Add(pictureBox7);
+            Controls.Add(labelForShiftDay);
+            Controls.Add(pictureBox6);
+            Controls.Add(labelForCounterDay);
+            Controls.Add(pictureBox5);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(button_next);
+            Controls.Add(button_prev);
+            Controls.Add(tableLayoutPanel1);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -372,6 +631,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxCabinetActive).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -400,5 +662,23 @@
         private Label label2;
         private Label label3;
         private Label label4;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Button button_prev;
+        private Button button_next;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private PictureBox pictureBox5;
+        private Label labelForCounterDay;
+        private PictureBox pictureBox6;
+        private Label labelForShiftDay;
+        private PictureBox pictureBox7;
+        private Label labelForShiftNight;
+        private Label label11;
+        private Label labelTimePeriodDayShift;
+        private Label labelTimePeriodNightShift;
     }
 }
