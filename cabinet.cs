@@ -96,7 +96,7 @@ namespace WinFormsApp1
             WindowState = FormWindowState.Maximized;
             FillTableLayoutPanel(_currUser);
             DBConnection db = new DBConnection();
-            db.openConnection();            
+            db.openConnection();
             int counterDay = 0;
             int counterShiftDay = 0;
             int counterShiftNight = 0;
@@ -159,11 +159,11 @@ namespace WinFormsApp1
                         }
                     }
                 }
-                
+
                 labelTimePeriodNightShift.Text = $"Для ночной смены: {timeStartNight} - {timeEndNight}";
                 connection.Close();
             }
-            
+
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -378,6 +378,12 @@ namespace WinFormsApp1
                 case "Отпуск": return "О";
                 default: return shiftType;
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            whowithme whowithme = new whowithme(_currentUser);
+            whowithme.Show();
         }
     }
 }

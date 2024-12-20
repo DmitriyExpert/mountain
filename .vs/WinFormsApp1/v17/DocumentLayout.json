@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "D:\\VSproject\\WinFormsApp1\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\requesteditschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:requesteditschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -37,6 +38,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|D:\\VSproject\\WinFormsApp1\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|d:\\vsproject\\winformsapp1\\requesteditschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:requesteditschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|d:\\vsproject\\winformsapp1\\requesteditschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:requesteditschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|d:\\vsproject\\winformsapp1\\cabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52ABF024-7064-40A0-8A43-1A9698AEEA15}|WinFormsApp1.csproj|solutionrelative:cabinet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> origin/Demakov
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +59,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 6,
+=======
+          "SelectedChildIndex": 4,
+>>>>>>> origin/Demakov
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,6 +83,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "redacRoles.cs",
               "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\redacRoles.cs",
@@ -90,17 +108,34 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+=======
+              "DocumentIndex": 0,
+              "Title": "requestEditSchedule.cs",
+              "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\requestEditSchedule.cs",
+              "RelativeDocumentMoniker": "requestEditSchedule.cs",
+              "ToolTip": "D:\\VSproject\\WinFormsApp1\\requestEditSchedule.cs",
+              "RelativeToolTip": "requestEditSchedule.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAcwIAAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T18:01:22.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+>>>>>>> origin/Demakov
               "Title": "requestEditSchedule.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\requestEditSchedule.cs",
               "RelativeDocumentMoniker": "requestEditSchedule.cs",
               "ToolTip": "D:\\VSproject\\WinFormsApp1\\requestEditSchedule.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "requestEditSchedule.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T13:46:45.37Z",
+              "WhenOpened": "2024-12-20T17:51:17.962Z",
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 6,
               "Title": "redacUsers.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\redacUsers.cs",
@@ -161,13 +196,16 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+=======
+              "DocumentIndex": 2,
+>>>>>>> origin/Demakov
               "Title": "cabinet.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "D:\\VSproject\\WinFormsApp1\\cabinet.cs",
               "RelativeDocumentMoniker": "cabinet.cs",
               "ToolTip": "D:\\VSproject\\WinFormsApp1\\cabinet.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "cabinet.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T20:49:46.229Z",
+              "WhenOpened": "2024-12-20T17:31:42.248Z",
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             }
           ]

@@ -328,6 +328,7 @@
             label2.Size = new Size(189, 24);
             label2.TabIndex = 46;
             label2.Text = "С кем я в смене?";
+            label2.Click += label2_Click;
             // 
             // label3
             // 
