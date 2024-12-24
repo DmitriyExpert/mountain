@@ -42,6 +42,9 @@
             pushButton = new Button();
             label5 = new Label();
             label6 = new Label();
+            newTypeshift_label = new Label();
+            newTypeshift_field = new TextBox();
+            label7 = new Label();
             SuspendLayout();
             // 
             // iconimg
@@ -89,7 +92,7 @@
             // comboBoxSelectedDate
             // 
             comboBoxSelectedDate.FormattingEnabled = true;
-            comboBoxSelectedDate.Location = new Point(12, 140);
+            comboBoxSelectedDate.Location = new Point(12, 102);
             comboBoxSelectedDate.Name = "comboBoxSelectedDate";
             comboBoxSelectedDate.Size = new Size(224, 23);
             comboBoxSelectedDate.TabIndex = 60;
@@ -104,14 +107,14 @@
             // 
             // textBoxForNewTimeStart
             // 
-            textBoxForNewTimeStart.Location = new Point(12, 197);
+            textBoxForNewTimeStart.Location = new Point(12, 159);
             textBoxForNewTimeStart.Name = "textBoxForNewTimeStart";
             textBoxForNewTimeStart.Size = new Size(328, 23);
             textBoxForNewTimeStart.TabIndex = 62;
             // 
             // textBoxForNewTimeEnd
             // 
-            textBoxForNewTimeEnd.Location = new Point(12, 258);
+            textBoxForNewTimeEnd.Location = new Point(12, 220);
             textBoxForNewTimeEnd.Name = "textBoxForNewTimeEnd";
             textBoxForNewTimeEnd.Size = new Size(328, 23);
             textBoxForNewTimeEnd.TabIndex = 63;
@@ -120,7 +123,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label2.Location = new Point(12, 121);
+            label2.Location = new Point(12, 83);
             label2.Name = "label2";
             label2.Size = new Size(94, 15);
             label2.TabIndex = 64;
@@ -130,21 +133,21 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label3.Location = new Point(12, 179);
+            label3.Location = new Point(12, 141);
             label3.Name = "label3";
-            label3.Size = new Size(328, 15);
+            label3.Size = new Size(333, 15);
             label3.TabIndex = 65;
-            label3.Text = "Напишите новое время начала смены в формате 00:00";
+            label3.Text = "*Напишите новое время начала смены в формате 00:00";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label4.Location = new Point(12, 240);
+            label4.Location = new Point(12, 202);
             label4.Name = "label4";
-            label4.Size = new Size(319, 15);
+            label4.Size = new Size(324, 15);
             label4.TabIndex = 66;
-            label4.Text = "Напишите новое время конца смены в формате 00:00";
+            label4.Text = "*Напишите новое время конца смены в формате 00:00";
             // 
             // button1
             // 
@@ -195,6 +198,34 @@
             label6.TabIndex = 70;
             label6.Text = "Лимит - 1000 символов\r\n";
             // 
+            // newTypeshift_label
+            // 
+            newTypeshift_label.AutoSize = true;
+            newTypeshift_label.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            newTypeshift_label.Location = new Point(12, 253);
+            newTypeshift_label.Name = "newTypeshift_label";
+            newTypeshift_label.Size = new Size(311, 15);
+            newTypeshift_label.TabIndex = 72;
+            newTypeshift_label.Text = "*Напишите тип смены (Выходной, Ночная, Дневная)";
+            // 
+            // newTypeshift_field
+            // 
+            newTypeshift_field.Location = new Point(12, 271);
+            newTypeshift_field.Name = "newTypeshift_field";
+            newTypeshift_field.Size = new Size(328, 23);
+            newTypeshift_field.TabIndex = 71;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label7.ForeColor = Color.Red;
+            label7.Location = new Point(12, 594);
+            label7.Name = "label7";
+            label7.Size = new Size(195, 15);
+            label7.TabIndex = 73;
+            label7.Text = "* - строго по правилу написания";
+            // 
             // requestEditSchedule
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -202,6 +233,9 @@
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(619, 634);
             ControlBox = false;
+            Controls.Add(label7);
+            Controls.Add(newTypeshift_label);
+            Controls.Add(newTypeshift_field);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(pushButton);
@@ -216,6 +250,8 @@
             Controls.Add(label1);
             Controls.Add(iconimg);
             Controls.Add(closeBtnRegister);
+            MaximumSize = new Size(635, 673);
+            MinimumSize = new Size(576, 673);
             Name = "requestEditSchedule";
             Text = "Запрос на смену расписания";
             Load += requestEditSchedule_Load;
@@ -239,5 +275,8 @@
         private Button pushButton;
         private Label label5;
         private Label label6;
+        private Label newTypeshift_label;
+        private TextBox newTypeshift_field;
+        private Label label7;
     }
 }

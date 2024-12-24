@@ -10,27 +10,24 @@
     <Compile Update="cabinet.cs">
       <SubType>Form</SubType>
     </Compile>
-<<<<<<< HEAD
-=======
     <Compile Update="contacts.cs">
       <SubType>Form</SubType>
     </Compile>
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
     <Compile Update="editme.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="menu.cs">
       <SubType>Form</SubType>
     </Compile>
-<<<<<<< HEAD
-=======
+    <Compile Update="myRequestBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="redacRoles.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="redacRolesMain.cs">
       <SubType>Form</SubType>
     </Compile>
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
     <Compile Update="redacUsers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -41,6 +38,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="requestEditSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="requestsinadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="toRedacSchedule.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="whowithme.cs">

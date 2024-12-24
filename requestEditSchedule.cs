@@ -111,24 +111,48 @@ namespace WinFormsApp1
                 MessageBox.Show("Пожалуйста, заполните комментарий!");
                 return;
             }
+
+            if (string.IsNullOrWhiteSpace(newTypeshift_field.Text))
+            {
+                MessageBox.Show("Пожалуйста, укажите желаемый тип смены!");
+                return;
+            }
+
             try
             {
                 DBConnection db = new DBConnection();
                 using (MySqlConnection connection = db.getConnection())
                 {
                     connection.Open();
+                    // 1. Получение id типа смены из таблицы shifttypes
+                    int newTypeShiftId = -1;
+                    string selectShiftTypeQuery = "SELECT id FROM mountain.shiftstypes WHERE shiftType_name = @typeName";
+                    using (MySqlCommand command = new MySqlCommand(selectShiftTypeQuery, connection))
+                    {
+                        command.Parameters.AddWithValue("@typeName", newTypeshift_field.Text);
+                        object result = command.ExecuteScalar();
+                        if (result != null)
+                        {
+                            newTypeShiftId = Convert.ToInt32(result);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Тип смены не найден в справочнике!");
+                            return;
+                        }
 
-                    string insertQuery = "INSERT INTO mountain.request_of_schedule (user_id, request_comment, datesSelected, status_id, new_time_start, new_time_end) VALUES (@user_id, @request_comment, @datesSelected, @status_id, @new_time_start, @new_time_end)";
+                    }
+                    // 2. Вставка данных в таблицу request_of_schedule
+                    string insertQuery = "INSERT INTO mountain.request_of_schedule (user_id, request_comment, datesSelected, status_id, new_time_start, new_time_end, new_typeShift_id) VALUES (@user_id, @request_comment, @datesSelected, @status_id, @new_time_start, @new_time_end, @new_typeShift_id)";
                     using (MySqlCommand command = new MySqlCommand(insertQuery, connection))
                     {
                         command.Parameters.Add("@user_id", MySqlDbType.Int32).Value = _currUser.Id;
                         command.Parameters.Add("@request_comment", MySqlDbType.VarChar).Value = richTextBoxForRequest.Text;
                         command.Parameters.Add("@datesSelected", MySqlDbType.Date).Value = DateTime.Parse(comboBoxSelectedDate.SelectedItem.ToString());
                         command.Parameters.Add("@status_id", MySqlDbType.Int32).Value = 3;
-                        // 1. Преобразуем DateTime к формату HH:mm:ss
                         command.Parameters.Add("@new_time_start", MySqlDbType.Time).Value = newTimeStart.TimeOfDay;
                         command.Parameters.Add("@new_time_end", MySqlDbType.Time).Value = newTimeEnd.TimeOfDay;
-
+                        command.Parameters.Add("@new_typeShift_id", MySqlDbType.Int32).Value = newTypeShiftId;
 
                         command.ExecuteNonQuery();
                         MessageBox.Show("Запрос отправлен!");

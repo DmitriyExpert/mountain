@@ -45,8 +45,10 @@
             label5 = new Label();
             buttonForDeleteRoles = new Button();
             label6 = new Label();
+            backtomenu = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
             ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)backtomenu).BeginInit();
             SuspendLayout();
             // 
             // logoiconRegister
@@ -60,10 +62,11 @@
             // 
             // toClient
             // 
+            toClient.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             toClient.AutoSize = true;
             toClient.Cursor = Cursors.Hand;
             toClient.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            toClient.Location = new Point(1403, 43);
+            toClient.Location = new Point(763, 43);
             toClient.Name = "toClient";
             toClient.Size = new Size(222, 29);
             toClient.TabIndex = 58;
@@ -85,7 +88,7 @@
             iconimg.Cursor = Cursors.Hand;
             iconimg.FlatStyle = FlatStyle.Popup;
             iconimg.Image = Properties.Resources.icon_menu;
-            iconimg.Location = new Point(1694, 34);
+            iconimg.Location = new Point(1054, 34);
             iconimg.Name = "iconimg";
             iconimg.Size = new Size(62, 54);
             iconimg.TabIndex = 56;
@@ -103,7 +106,7 @@
             closeBtnRegister.FlatStyle = FlatStyle.Popup;
             closeBtnRegister.ForeColor = SystemColors.ButtonHighlight;
             closeBtnRegister.Image = Properties.Resources.close;
-            closeBtnRegister.Location = new Point(1774, 28);
+            closeBtnRegister.Location = new Point(1134, 28);
             closeBtnRegister.Name = "closeBtnRegister";
             closeBtnRegister.Size = new Size(75, 66);
             closeBtnRegister.TabIndex = 55;
@@ -228,13 +231,26 @@
             label6.TabIndex = 70;
             label6.Text = "*С удалением роли, удалятся автосмены и расписания для этой роли";
             // 
+            // backtomenu
+            // 
+            backtomenu.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            backtomenu.BackgroundImage = Properties.Resources.backtomenu;
+            backtomenu.Cursor = Cursors.Hand;
+            backtomenu.Location = new Point(31, 711);
+            backtomenu.Name = "backtomenu";
+            backtomenu.Size = new Size(69, 71);
+            backtomenu.TabIndex = 71;
+            backtomenu.TabStop = false;
+            backtomenu.Click += backtomenu_Click;
+            // 
             // redacRolesMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(1904, 1041);
+            ClientSize = new Size(1264, 824);
             ControlBox = false;
+            Controls.Add(backtomenu);
             Controls.Add(label6);
             Controls.Add(buttonForDeleteRoles);
             Controls.Add(label5);
@@ -251,11 +267,14 @@
             Controls.Add(AdminPanelLogo);
             Controls.Add(iconimg);
             Controls.Add(closeBtnRegister);
+            MaximumSize = new Size(1920, 1080);
+            MinimumSize = new Size(1280, 860);
             Name = "redacRolesMain";
             Text = "Редактирование ролей";
             Load += redacRolesMain_Load;
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).EndInit();
             ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).EndInit();
+            ((System.ComponentModel.ISupportInitialize)backtomenu).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -278,5 +297,6 @@
         private Label label5;
         private Button buttonForDeleteRoles;
         private Label label6;
+        private PictureBox backtomenu;
     }
 }

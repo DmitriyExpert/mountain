@@ -74,5 +74,12 @@ namespace WinFormsApp1
             this.Close();
             admMenu.Show();
         }
+
+        private void toContact_Click(object sender, EventArgs e)
+        {
+            contacts contacts = new contacts(CurrentUser);
+            contacts.Show();
+            this.Close();
+        }
     }
 }

@@ -14,22 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WinFormsApp1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af40dad38a1f32eaabf32717fdc8cdc5f85dffde")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7aac251e7793c84b6d91de4ed9eaef43d57d1c01")]
->>>>>>> origin/Demakov
-=======
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+770d2d6cec153aa45ff5fb77d3fbc9a1a26bf56c")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf1119e706c0278e6186ddb344e737aed40200ef")]
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24512113c386097d6984b3b4d810a217e993c92e")]
->>>>>>> origin/main
->>>>>>> 3b8e36f2ca5a8d7f11a14c22fa2e039372a30ac7
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8f5946375e28986e491c6f601ade4f5587ab553")]
 [assembly: System.Reflection.AssemblyProductAttribute("WinFormsApp1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WinFormsApp1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

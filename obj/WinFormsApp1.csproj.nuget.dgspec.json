@@ -1,22 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\timar\\OneDrive\\Рабочий стол\\proekyt\\mountain\\WinFormsApp1.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\timar\\OneDrive\\Рабочий стол\\proekyt\\mountain\\WinFormsApp1.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\timar\\OneDrive\\Рабочий стол\\proekyt\\mountain\\WinFormsApp1.csproj",
-        "projectName": "WinFormsApp1",
-        "projectPath": "C:\\Users\\timar\\OneDrive\\Рабочий стол\\proekyt\\mountain\\WinFormsApp1.csproj",
-        "packagesPath": "C:\\Users\\timar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\timar\\OneDrive\\Рабочий стол\\proekyt\\mountain\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\timar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
     "D:\\VSproject\\WinFormsApp1\\WinFormsApp1.csproj": {}
   },
   "projects": {
@@ -35,7 +19,6 @@
         "configFilePaths": [
           "C:\\Users\\dpemv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,10 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-<<<<<<< HEAD
-          "C:\\Program Files\\dotnet\\library-packs": {},
-=======
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -70,6 +49,12 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "Costura.Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.2, )"
@@ -102,11 +87,7 @@
               "privateAssets": "none"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
-=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
         }
       }
     }

@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-<<<<<<< HEAD
-=======
 using System.Globalization;
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,23 +25,13 @@ namespace WinFormsApp1
         public cabinet(AuthUser CurrentUser)
         {
             InitializeComponent();
-<<<<<<< HEAD
-<<<<<<< HEAD
-            if(CurrentUser.RoleId == 2)
-            {
-                panel.Visible = true;
-            } else
-=======
-=======
             button_next.Click += _nextWeekButton_Click;
             button_prev.Click += _prevWeekButton_Click;
->>>>>>> origin/main
             if (CurrentUser.RoleId == 2)
             {
                 panel.Visible = true;
             }
             else
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             {
                 panel.Visible = false;
             }
@@ -54,58 +41,33 @@ namespace WinFormsApp1
 
             MySqlCommand command = new MySqlCommand("SELECT role_name FROM mountain.roles where `id` = @parseId", db.getConnection());
             command.Parameters.Add("@parseId", MySqlDbType.VarChar).Value = Convert.ToString(CurrentUser.RoleId);
-<<<<<<< HEAD
-            
-=======
 
             adapter.SelectCommand = command;
             adapter.Fill(table);
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
 
             if (table.Rows.Count > 0)
             {
-                MessageBox.Show(table.Rows.Count.ToString());
+                
                 DataRow row = table.Rows[0];
                 string roleName = row["role_name"]?.ToString() ?? "Роль не определена";
                 labelProff.Text = roleName;
             }
             else
             {
-<<<<<<< HEAD
-                labelProff.Text = CurrentUser.Id.ToString();
-            }
-
-            fioUser.Text = CurrentUser.LastName + " " + CurrentUser.FirsName + " " + CurrentUser.MiddleName;
-=======
                 labelProff.Text = "Ошибка";
             }
 
             fioUser.Text = CurrentUser.LastName + " " + CurrentUser.FirstName + " " + CurrentUser.MiddleName;
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             identifyUser.Text = CurrentUser.Id.ToString() + ' ' + "-";
 
             _currUser = CurrentUser;
             labelVisible = this.panel;
             functions.SetCurrentUser(_currUser);
             functions.panelVisible(this, EventArgs.Empty, labelVisible);
-<<<<<<< HEAD
-        }
-
-
-=======
 
 
         }
 
-<<<<<<< HEAD
-
-
-
-
-
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
-=======
->>>>>>> origin/main
         private void closeBtnRegister_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -128,30 +90,84 @@ namespace WinFormsApp1
             this.Close();
             newmenu.Show();
         }
+        private string GetShiftTypeFromRequest(int requestId, int userId, DateTime date)
+        {
+            string shiftTypeName = "";
+            DBConnection db = new DBConnection();
+            using (MySqlConnection connection = db.getConnection())
+            {
+                connection.Open();
+                using (MySqlCommand command = new MySqlCommand("SELECT new_typeShift_id FROM mountain.request_of_schedule WHERE user_id = @userId AND id = @requestId", connection))
+                {
+                    command.Parameters.AddWithValue("@requestId", requestId);
+                    command.Parameters.AddWithValue("@userId", userId);
+
+                    object result = command.ExecuteScalar();
+
+                    if (result != DBNull.Value)
+                    {
+                        int newTypeShiftId = Convert.ToInt32(result);
+
+                        using (MySqlCommand shiftTypeCommand = new MySqlCommand("SELECT shiftType_name FROM mountain.shiftstypes WHERE id = @newTypeShiftId", connection))
+                        {
+                            shiftTypeCommand.Parameters.AddWithValue("@newTypeShiftId", newTypeShiftId);
+                            shiftTypeName = shiftTypeCommand.ExecuteScalar()?.ToString() ?? ""; //Обработка null
+                        }
+                    }
+                }
+            }
+            return shiftTypeName;
+        }
 
         private void cabinet_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
             FillTableLayoutPanel(_currUser);
+
             DBConnection db = new DBConnection();
             db.openConnection();
+
+            // Инициализация счетчиков
             int counterDay = 0;
-            int counterShiftDay = 0;
-            int counterShiftNight = 0;
-            MySqlCommand command = new MySqlCommand("SELECT COUNT(*) AS total_shifts,SUM(CASE WHEN s.typeShift_id = 1 THEN 1 ELSE 0 END) AS day_shifts, SUM(CASE WHEN s.typeShift_id = 2 THEN 1 ELSE 0 END) AS night_shifts FROM mountain.autoschedule a INNER JOIN mountain.shifts s ON a.shift_id = s.id WHERE a.user_id = @user_id;", db.getConnection());
-            command.Parameters.Add("@user_id", MySqlDbType.VarChar).Value = Convert.ToString(_currentUser.Id);
-            using (MySqlDataReader reader = command.ExecuteReader())
+            int counterNight = 0;
+            int counterWeekend = 0;
+            int counterVacation = 0;
+            int counterOther = 0;
+
+            // Получаем все данные из autoschedule
+            DataTable dt = GetScheduleData(_currentUser);
+
+            if (dt != null && dt.Rows.Count > 0)
             {
-                if (reader.Read()) // Используем if, так как у нас одна строка
+                foreach (DataRow row in dt.Rows)
                 {
-                    counterDay = Convert.ToInt32(reader["total_shifts"]);
-                    counterShiftDay = Convert.ToInt32(reader["day_shifts"]);
-                    counterShiftNight = Convert.ToInt32(reader["night_shifts"]);
+                    string shiftTypeName;
+                    if (row["request_id"] != DBNull.Value)
+                    {
+                        int requestId = Convert.ToInt32(row["request_id"]);
+                        shiftTypeName = GetShiftTypeFromRequest(requestId, _currentUser.Id, Convert.ToDateTime(row["dateOfPeriod"]));
+                    }
+                    else
+                    {
+                        shiftTypeName = row["shiftType_name"].ToString();
+                    }
+
+                    switch (shiftTypeName)
+                    {
+                        case "Дневная": counterDay++; break;
+                        case "Ночная": counterNight++; break;
+                        case "Выходной": counterWeekend++; break;
+                        case "Отпуск": counterVacation++; break;
+                        default: counterOther++; break; // Обработка других типов
+                    }
                 }
             }
-            labelForCounterDay.Text = $"Всего смен - {counterDay}";
-            labelForShiftDay.Text = $"Дневных смен - {counterShiftDay}";
-            labelForShiftNight.Text = $"Ночных смен - {counterShiftNight}";
+
+            labelForCounterDay.Text = $"Всего смен - {counterDay + counterNight}";
+            labelForShiftDay.Text = $"Дневных смен - {counterDay}";
+            labelForShiftNight.Text = $"Ночных смен - {counterNight}";
+
+
             db.closeConnection();
             using (MySqlConnection connection = db.getConnection())
             {
@@ -215,8 +231,6 @@ namespace WinFormsApp1
             this.Close();
             editme.Show();
         }
-<<<<<<< HEAD
-=======
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -243,9 +257,6 @@ namespace WinFormsApp1
         {
 
         }
-<<<<<<< HEAD
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
-=======
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -350,14 +361,54 @@ namespace WinFormsApp1
 
                 if (columnIndex == -1) continue;
 
-                string shiftType = row["shiftType_name"].ToString();
-                // Упрощение названия смены
-                string shiftTypeShort = GetShortShiftTypeName(shiftType);
+                string shiftTypeShort;
+                // Проверка request_id на null
+                if (row["request_id"] != DBNull.Value)
+                {
+                    // Получаем  тип смены из таблицы request_of_schedule
+                    int requestId = Convert.ToInt32(row["request_id"]);
+                    shiftTypeShort = GetShortShiftTypeFromRequest(requestId);
+                }
+                else
+                {
+                    string shiftType = row["shiftType_name"].ToString();
+                    // Упрощение названия смены
+                    shiftTypeShort = GetShortShiftTypeName(shiftType);
+                }
 
                 // Вставляем тип смены
                 Label shiftLabel = (Label)tableLayoutPanel1.GetControlFromPosition(columnIndex, 2);
                 shiftLabel.Text = shiftTypeShort;
             }
+        }
+        private string GetShortShiftTypeFromRequest(int requestId)
+        {
+            DBConnection db = new DBConnection();
+            string shiftTypeShort = "";
+
+            using (MySqlConnection connection = db.getConnection())
+            {
+                connection.Open();
+                string sqlQuery = "SELECT st.shiftType_name FROM mountain.request_of_schedule rs " +
+                                  "JOIN mountain.shiftstypes st ON rs.new_typeShift_id = st.id " +
+                                  "WHERE rs.id = @requestId";
+
+
+                using (MySqlCommand command = new MySqlCommand(sqlQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@requestId", requestId);
+                    object result = command.ExecuteScalar();
+                    if (result != null)
+                    {
+                        shiftTypeShort = GetShortShiftTypeName(result.ToString());
+                    }
+                    else
+                    {
+                        shiftTypeShort = "";
+                    }
+                }
+            }
+            return shiftTypeShort;
         }
         private DataTable GetScheduleData(AuthUser _currUser)
         {
@@ -365,7 +416,7 @@ namespace WinFormsApp1
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             DataTable dt = new DataTable();
 
-            MySqlCommand command = new MySqlCommand("USE mountain; SELECT autoschedule.id,dateOfPeriod, time_start, time_end, shiftType_name FROM mountain.autoschedule INNER JOIN mountain.shifts ON shifts.id = autoschedule.shift_id INNER JOIN mountain.shiftstypes ON shiftstypes.id = shifts.typeShift_id WHERE autoschedule.user_id = @id", db.getConnection());
+            MySqlCommand command = new MySqlCommand("USE mountain; SELECT autoschedule.id,dateOfPeriod, time_start, time_end, shiftType_name, request_id FROM mountain.autoschedule INNER JOIN mountain.shifts ON shifts.id = autoschedule.shift_id INNER JOIN mountain.shiftstypes ON shiftstypes.id = shifts.typeShift_id WHERE autoschedule.user_id = @id", db.getConnection());
             command.Parameters.Add("@id", MySqlDbType.Int32).Value = _currUser.Id;
             adapter.SelectCommand = command;
             adapter.Fill(dt);
@@ -422,15 +473,17 @@ namespace WinFormsApp1
                 default: return shiftType;
             }
         }
-<<<<<<< HEAD
 
         private void label2_Click(object sender, EventArgs e)
         {
             whowithme whowithme = new whowithme(_currentUser);
             whowithme.Show();
         }
-=======
->>>>>>> origin/main
->>>>>>> 3b8e36f2ca5a8d7f11a14c22fa2e039372a30ac7
+
+        private void toRequestBrowser_Click(object sender, EventArgs e)
+        {
+            myRequestBrowser myRequestBrowser = new myRequestBrowser(_currentUser);
+            myRequestBrowser.Show();
+        }
     }
 }

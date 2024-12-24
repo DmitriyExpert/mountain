@@ -106,10 +106,11 @@
             // 
             // pictureBox3
             // 
+            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox3.BackColor = SystemColors.ButtonHighlight;
-            pictureBox3.Location = new Point(147, 255);
+            pictureBox3.Location = new Point(147, 265);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(1716, 697);
+            pictureBox3.Size = new Size(1695, 697);
             pictureBox3.TabIndex = 57;
             pictureBox3.TabStop = false;
             // 
@@ -139,10 +140,7 @@
             toContact.Size = new Size(48, 48);
             toContact.TabIndex = 55;
             toContact.UseVisualStyleBackColor = false;
-<<<<<<< HEAD
-=======
             toContact.Click += toContact_Click;
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // pictureBox4
             // 
@@ -154,10 +152,7 @@
             pictureBox4.Size = new Size(69, 69);
             pictureBox4.TabIndex = 54;
             pictureBox4.TabStop = false;
-<<<<<<< HEAD
-=======
             pictureBox4.Click += pictureBox4_Click;
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // cabinetActive
             // 
@@ -187,9 +182,10 @@
             // 
             // backtomenu
             // 
+            backtomenu.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             backtomenu.BackgroundImage = Properties.Resources.backtomenu;
             backtomenu.Cursor = Cursors.Hand;
-            backtomenu.Location = new Point(13, 945);
+            backtomenu.Location = new Point(13, 850);
             backtomenu.Name = "backtomenu";
             backtomenu.Size = new Size(69, 71);
             backtomenu.TabIndex = 51;
@@ -201,9 +197,10 @@
             pictureBox2.BackColor = Color.LightGray;
             pictureBox2.Location = new Point(98, 100);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1807, 943);
+            pictureBox2.Size = new Size(1807, 923);
             pictureBox2.TabIndex = 50;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox1
             // 
@@ -219,26 +216,24 @@
             panel.AutoSize = true;
             panel.Cursor = Cursors.Hand;
             panel.Font = new Font("Arial Narrow", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            panel.Location = new Point(1309, 39);
+            panel.Location = new Point(379, 39);
             panel.Name = "panel";
             panel.Size = new Size(185, 25);
             panel.TabIndex = 48;
             panel.Text = "Панель управления";
-<<<<<<< HEAD
-=======
             panel.Click += panel_Click;
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // pictureToCabinet
             // 
             pictureToCabinet.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureToCabinet.BackgroundImage = Properties.Resources.user__icon;
             pictureToCabinet.BackgroundImageLayout = ImageLayout.Center;
-            pictureToCabinet.Location = new Point(1549, 13);
+            pictureToCabinet.Location = new Point(619, 13);
             pictureToCabinet.Name = "pictureToCabinet";
             pictureToCabinet.Size = new Size(74, 74);
             pictureToCabinet.TabIndex = 47;
             pictureToCabinet.TabStop = false;
+            pictureToCabinet.Click += pictureToCabinet_Click;
             // 
             // iconimg
             // 
@@ -246,7 +241,7 @@
             iconimg.Cursor = Cursors.Hand;
             iconimg.FlatStyle = FlatStyle.Popup;
             iconimg.Image = Properties.Resources.icon_menu;
-            iconimg.Location = new Point(1708, 27);
+            iconimg.Location = new Point(778, 27);
             iconimg.Name = "iconimg";
             iconimg.Size = new Size(62, 54);
             iconimg.TabIndex = 46;
@@ -264,7 +259,7 @@
             closeBtnRegister.FlatStyle = FlatStyle.Popup;
             closeBtnRegister.ForeColor = SystemColors.ButtonHighlight;
             closeBtnRegister.Image = Properties.Resources.close;
-            closeBtnRegister.Location = new Point(1788, 21);
+            closeBtnRegister.Location = new Point(858, 21);
             closeBtnRegister.Name = "closeBtnRegister";
             closeBtnRegister.Size = new Size(75, 66);
             closeBtnRegister.TabIndex = 45;
@@ -403,7 +398,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1904, 1041);
+            ClientSize = new Size(974, 926);
             ControlBox = false;
             Controls.Add(label5);
             Controls.Add(label4);
@@ -434,8 +429,10 @@
             Controls.Add(iconimg);
             Controls.Add(closeBtnRegister);
             Controls.Add(logoiconRegister);
+            MaximumSize = new Size(1920, 1080);
+            MinimumSize = new Size(990, 965);
             Name = "editme";
-            Text = "editme";
+            Text = "Редактирование данных";
             Load += editme_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();

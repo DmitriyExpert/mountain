@@ -12,14 +12,9 @@
       }
     ],
     "additionalProbingPaths": [
-<<<<<<< HEAD
-      "C:\\Users\\timar\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\timar\\.nuget\\packages"
-=======
       "C:\\Users\\dpemv\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\dpemv\\.nuget\\packages",
       "D:\\visual studio\\shared\\NuGetPackages"
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,

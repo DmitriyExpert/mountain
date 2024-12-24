@@ -35,10 +35,10 @@
             closeBtn = new Button();
             registerTextSupForm = new Label();
             loginBtn = new Button();
-            bodyRegisterTextBox = new RichTextBox();
             passwordtextBox = new TextBox();
             logintextBox = new TextBox();
             checkBox1 = new CheckBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)logoicon).BeginInit();
             SuspendLayout();
             // 
@@ -57,7 +57,7 @@
             toAuth.AutoSize = true;
             toAuth.Cursor = Cursors.Hand;
             toAuth.Font = new Font("Arial Narrow", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            toAuth.Location = new Point(1429, 42);
+            toAuth.Location = new Point(709, 42);
             toAuth.Name = "toAuth";
             toAuth.Size = new Size(54, 23);
             toAuth.TabIndex = 8;
@@ -70,7 +70,7 @@
             toRegister.AutoSize = true;
             toRegister.Cursor = Cursors.Hand;
             toRegister.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            toRegister.Location = new Point(1508, 42);
+            toRegister.Location = new Point(788, 42);
             toRegister.Name = "toRegister";
             toRegister.Size = new Size(189, 25);
             toRegister.TabIndex = 7;
@@ -83,7 +83,7 @@
             iconimg.Cursor = Cursors.Hand;
             iconimg.FlatStyle = FlatStyle.Popup;
             iconimg.Image = Properties.Resources.icon_menu;
-            iconimg.Location = new Point(1720, 30);
+            iconimg.Location = new Point(1000, 30);
             iconimg.Name = "iconimg";
             iconimg.Size = new Size(62, 54);
             iconimg.TabIndex = 6;
@@ -101,7 +101,7 @@
             closeBtn.FlatStyle = FlatStyle.Popup;
             closeBtn.ForeColor = SystemColors.ButtonHighlight;
             closeBtn.Image = Properties.Resources.close;
-            closeBtn.Location = new Point(1800, 24);
+            closeBtn.Location = new Point(1080, 24);
             closeBtn.Name = "closeBtn";
             closeBtn.Size = new Size(75, 66);
             closeBtn.TabIndex = 5;
@@ -132,19 +132,6 @@
             loginBtn.UseVisualStyleBackColor = true;
             loginBtn.Click += loginBtn_Click;
             // 
-            // bodyRegisterTextBox
-            // 
-            bodyRegisterTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            bodyRegisterTextBox.BackColor = Color.White;
-            bodyRegisterTextBox.BorderStyle = BorderStyle.None;
-            bodyRegisterTextBox.Font = new Font("Arial", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            bodyRegisterTextBox.Location = new Point(989, 343);
-            bodyRegisterTextBox.Name = "bodyRegisterTextBox";
-            bodyRegisterTextBox.ReadOnly = true;
-            bodyRegisterTextBox.Size = new Size(645, 220);
-            bodyRegisterTextBox.TabIndex = 18;
-            bodyRegisterTextBox.Text = "SCHEDULE mountain - сервис для просмотра и составления расписания сотрудников производства компании mountain... ";
-            // 
             // passwordtextBox
             // 
             passwordtextBox.Cursor = Cursors.IBeam;
@@ -165,10 +152,7 @@
             logintextBox.PlaceholderText = "Логин";
             logintextBox.Size = new Size(269, 26);
             logintextBox.TabIndex = 19;
-<<<<<<< HEAD
-=======
             logintextBox.TextChanged += logintextBox_TextChanged;
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // checkBox1
             // 
@@ -182,17 +166,28 @@
             checkBox1.UseVisualStyleBackColor = true;
             checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label1.Location = new Point(578, 343);
+            label1.Name = "label1";
+            label1.Size = new Size(577, 136);
+            label1.TabIndex = 22;
+            label1.Text = "SCHEDULE mountain - сервис для\r\nпросмотра и составления расписания \r\nсотрудников производства компании \r\nmountain... \r\n";
+            // 
             // auth
             // 
             AutoScaleDimensions = new SizeF(12F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1904, 1041);
+            ClientSize = new Size(1184, 681);
             ControlBox = false;
+            Controls.Add(label1);
             Controls.Add(checkBox1);
             Controls.Add(passwordtextBox);
             Controls.Add(logintextBox);
-            Controls.Add(bodyRegisterTextBox);
             Controls.Add(loginBtn);
             Controls.Add(registerTextSupForm);
             Controls.Add(toAuth);
@@ -202,8 +197,10 @@
             Controls.Add(logoicon);
             Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             Margin = new Padding(5);
+            MaximumSize = new Size(1920, 1080);
+            MinimumSize = new Size(1200, 720);
             Name = "auth";
-            Text = "auth";
+            Text = "Авторизация";
             Load += auth_Load;
             ((System.ComponentModel.ISupportInitialize)logoicon).EndInit();
             ResumeLayout(false);
@@ -219,9 +216,9 @@
         private Button closeBtn;
         private Label registerTextSupForm;
         private Button loginBtn;
-        private RichTextBox bodyRegisterTextBox;
         private TextBox passwordtextBox;
         private TextBox logintextBox;
         private CheckBox checkBox1;
+        private Label label1;
     }
 }

@@ -57,7 +57,7 @@
             closeBtn.FlatStyle = FlatStyle.Popup;
             closeBtn.ForeColor = SystemColors.ButtonHighlight;
             closeBtn.Image = Properties.Resources.close;
-            closeBtn.Location = new Point(1789, 12);
+            closeBtn.Location = new Point(1069, 12);
             closeBtn.Name = "closeBtn";
             closeBtn.Size = new Size(75, 66);
             closeBtn.TabIndex = 1;
@@ -70,7 +70,7 @@
             iconimg.Cursor = Cursors.Hand;
             iconimg.FlatStyle = FlatStyle.Popup;
             iconimg.Image = Properties.Resources.icon_menu;
-            iconimg.Location = new Point(1709, 18);
+            iconimg.Location = new Point(989, 18);
             iconimg.Name = "iconimg";
             iconimg.Size = new Size(62, 54);
             iconimg.TabIndex = 2;
@@ -83,7 +83,7 @@
             toRegister.AutoSize = true;
             toRegister.Cursor = Cursors.Hand;
             toRegister.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            toRegister.Location = new Point(1497, 30);
+            toRegister.Location = new Point(777, 30);
             toRegister.Name = "toRegister";
             toRegister.Size = new Size(189, 25);
             toRegister.TabIndex = 3;
@@ -96,7 +96,7 @@
             toAuth.AutoSize = true;
             toAuth.Cursor = Cursors.Hand;
             toAuth.Font = new Font("Arial Narrow", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            toAuth.Location = new Point(1413, 31);
+            toAuth.Location = new Point(693, 31);
             toAuth.Name = "toAuth";
             toAuth.Size = new Size(54, 23);
             toAuth.TabIndex = 4;
@@ -119,7 +119,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLightLight;
-            ClientSize = new Size(1904, 1041);
+            ClientSize = new Size(1184, 681);
             ControlBox = false;
             Controls.Add(indexText);
             Controls.Add(toAuth);
@@ -127,8 +127,10 @@
             Controls.Add(iconimg);
             Controls.Add(closeBtn);
             Controls.Add(logoicon);
+            MaximumSize = new Size(1920, 1080);
+            MinimumSize = new Size(1200, 720);
             Name = "index";
-            Text = "not auth";
+            Text = "Не авторизирован";
             Load += index_Load;
             ((System.ComponentModel.ISupportInitialize)logoicon).EndInit();
             ResumeLayout(false);

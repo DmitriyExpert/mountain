@@ -7,16 +7,18 @@ using System.Threading.Tasks;
 
 namespace WinFormsApp1
 {
-    internal class DBConnection
+    internal class DBConnection : IDisposable
     {
-<<<<<<< HEAD
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=123321;database=mountain");
-=======
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=123;database=mountain");
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+        private MySqlConnection connection;
+
+        public DBConnection()
+        {
+            connection = new MySqlConnection("server=localhost;port=3306;username=root;password=123;database=mountain");
+        }
+
         public void openConnection()
         {
-            if(connection.State == System.Data.ConnectionState.Closed)
+            if (connection.State == System.Data.ConnectionState.Closed)
             {
                 connection.Open();
             }
@@ -33,6 +35,15 @@ namespace WinFormsApp1
         public MySqlConnection getConnection()
         {
             return connection;
+        }
+        public void Dispose()
+        {
+            if (connection != null)
+            {
+                connection.Dispose();
+                connection = null;
+            }
+            GC.SuppressFinalize(this);
         }
     }
 }

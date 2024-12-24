@@ -56,7 +56,9 @@ namespace WinFormsApp1
 
         private void closeBtnRegister_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            adminpanelmenu adminpanelmenu = new adminpanelmenu(CurrentUser);
+            adminpanelmenu.Show();
+            this.Close();
         }
 
         private void iconimg_Click(object sender, EventArgs e)
@@ -239,9 +241,16 @@ namespace WinFormsApp1
 
         private void toClient_Click(object sender, EventArgs e)
         {
-            cabinet cabinet = new cabinet(CurrentUser);
+            menu menu = new menu(CurrentUser);
             this.Close();
-            cabinet.Show();
+            menu.Show();
+        }
+
+        private void backtomenu_Click(object sender, EventArgs e)
+        {
+            adminpanelmenu adminpanelmenu = new adminpanelmenu(CurrentUser);
+            adminpanelmenu.Show();
+            this.Close();
         }
     }
 }

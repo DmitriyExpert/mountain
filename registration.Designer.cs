@@ -38,12 +38,12 @@
             passwordtextBox = new TextBox();
             repasswordtextBox3 = new TextBox();
             registerBtn = new Button();
-            bodyRegisterTextBox = new RichTextBox();
             toAuth = new Label();
             toRegister = new Label();
             iconimg = new Button();
             closeBtnRegister = new Button();
             middleNametextBox = new TextBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
             SuspendLayout();
             // 
@@ -62,7 +62,7 @@
             toAuthinRegistration.AutoSize = true;
             toAuthinRegistration.Cursor = Cursors.Hand;
             toAuthinRegistration.Font = new Font("Arial Narrow", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            toAuthinRegistration.Location = new Point(3032, 37);
+            toAuthinRegistration.Location = new Point(2312, 37);
             toAuthinRegistration.Name = "toAuthinRegistration";
             toAuthinRegistration.Size = new Size(54, 23);
             toAuthinRegistration.TabIndex = 8;
@@ -74,7 +74,7 @@
             toRegisterinRegistration.AutoSize = true;
             toRegisterinRegistration.Cursor = Cursors.Hand;
             toRegisterinRegistration.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            toRegisterinRegistration.Location = new Point(3116, 36);
+            toRegisterinRegistration.Location = new Point(2396, 36);
             toRegisterinRegistration.Name = "toRegisterinRegistration";
             toRegisterinRegistration.Size = new Size(189, 25);
             toRegisterinRegistration.TabIndex = 7;
@@ -133,11 +133,7 @@
             // 
             repasswordtextBox3.Cursor = Cursors.IBeam;
             repasswordtextBox3.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-<<<<<<< HEAD
-            repasswordtextBox3.Location = new Point(182, 501);
-=======
             repasswordtextBox3.Location = new Point(182, 497);
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             repasswordtextBox3.Name = "repasswordtextBox3";
             repasswordtextBox3.PlaceholderText = "Введите пароль еще раз";
             repasswordtextBox3.Size = new Size(269, 26);
@@ -157,26 +153,13 @@
             registerBtn.UseVisualStyleBackColor = true;
             registerBtn.Click += registerBtn_Click;
             // 
-            // bodyRegisterTextBox
-            // 
-            bodyRegisterTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            bodyRegisterTextBox.BackColor = Color.White;
-            bodyRegisterTextBox.BorderStyle = BorderStyle.None;
-            bodyRegisterTextBox.Font = new Font("Arial", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            bodyRegisterTextBox.Location = new Point(985, 303);
-            bodyRegisterTextBox.Name = "bodyRegisterTextBox";
-            bodyRegisterTextBox.ReadOnly = true;
-            bodyRegisterTextBox.Size = new Size(645, 220);
-            bodyRegisterTextBox.TabIndex = 17;
-            bodyRegisterTextBox.Text = "SCHEDULE mountain - сервис для просмотра и составления расписания сотрудников производства компании mountain... ";
-            // 
             // toAuth
             // 
             toAuth.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             toAuth.AutoSize = true;
             toAuth.Cursor = Cursors.Hand;
             toAuth.Font = new Font("Arial Narrow", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            toAuth.Location = new Point(1441, 31);
+            toAuth.Location = new Point(721, 31);
             toAuth.Name = "toAuth";
             toAuth.Size = new Size(54, 23);
             toAuth.TabIndex = 21;
@@ -189,7 +172,7 @@
             toRegister.AutoSize = true;
             toRegister.Cursor = Cursors.Hand;
             toRegister.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            toRegister.Location = new Point(1525, 30);
+            toRegister.Location = new Point(805, 30);
             toRegister.Name = "toRegister";
             toRegister.Size = new Size(189, 25);
             toRegister.TabIndex = 20;
@@ -201,7 +184,7 @@
             iconimg.Cursor = Cursors.Hand;
             iconimg.FlatStyle = FlatStyle.Popup;
             iconimg.Image = Properties.Resources.icon_menu;
-            iconimg.Location = new Point(1737, 18);
+            iconimg.Location = new Point(1017, 18);
             iconimg.Name = "iconimg";
             iconimg.Size = new Size(62, 54);
             iconimg.TabIndex = 19;
@@ -219,7 +202,7 @@
             closeBtnRegister.FlatStyle = FlatStyle.Popup;
             closeBtnRegister.ForeColor = SystemColors.ButtonHighlight;
             closeBtnRegister.Image = Properties.Resources.close;
-            closeBtnRegister.Location = new Point(1817, 12);
+            closeBtnRegister.Location = new Point(1097, 12);
             closeBtnRegister.Name = "closeBtnRegister";
             closeBtnRegister.Size = new Size(75, 66);
             closeBtnRegister.TabIndex = 18;
@@ -235,13 +218,25 @@
             middleNametextBox.Size = new Size(269, 26);
             middleNametextBox.TabIndex = 22;
             // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label1.Location = new Point(502, 343);
+            label1.Name = "label1";
+            label1.Size = new Size(577, 136);
+            label1.TabIndex = 23;
+            label1.Text = "SCHEDULE mountain - сервис для\r\nпросмотра и составления расписания \r\nсотрудников производства компании \r\nmountain... \r\n";
+            // 
             // registration
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1904, 1041);
+            ClientSize = new Size(1184, 681);
             ControlBox = false;
+            Controls.Add(label1);
             Controls.Add(middleNametextBox);
             Controls.Add(toAuth);
             Controls.Add(toRegister);
@@ -257,9 +252,10 @@
             Controls.Add(toAuthinRegistration);
             Controls.Add(toRegisterinRegistration);
             Controls.Add(logoiconRegister);
-            Controls.Add(bodyRegisterTextBox);
+            MaximumSize = new Size(1920, 1080);
+            MinimumSize = new Size(1200, 720);
             Name = "registration";
-            Text = "Registration";
+            Text = "Регистрация";
             Load += registration_Load;
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).EndInit();
             ResumeLayout(false);
@@ -279,11 +275,11 @@
         private TextBox repasswordtextBox3;
         private Button registerBtn;
         private PictureBox pictureInBodyRegister;
-        private RichTextBox bodyRegisterTextBox;
         private Label toAuth;
         private Label toRegister;
         private Button iconimg;
         private Button closeBtnRegister;
         private TextBox middleNametextBox;
+        private Label label1;
     }
 }

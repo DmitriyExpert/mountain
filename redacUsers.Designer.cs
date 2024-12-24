@@ -42,11 +42,6 @@
             label3 = new Label();
             buttonRoleSearch = new Button();
             roleSearchField = new ComboBox();
-<<<<<<< HEAD
-            ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).BeginInit();
-=======
             pictureBox1 = new PictureBox();
             label4 = new Label();
             idForRedacUser = new Label();
@@ -57,19 +52,21 @@
             label5 = new Label();
             rolesComboBox = new ComboBox();
             buttonChangeRoles = new Button();
+            backtomenu = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+            ((System.ComponentModel.ISupportInitialize)backtomenu).BeginInit();
             SuspendLayout();
             // 
             // toClient
             // 
+            toClient.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             toClient.AutoSize = true;
             toClient.Cursor = Cursors.Hand;
             toClient.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            toClient.Location = new Point(1409, 35);
+            toClient.Location = new Point(789, 35);
             toClient.Name = "toClient";
             toClient.Size = new Size(222, 29);
             toClient.TabIndex = 56;
@@ -91,7 +88,7 @@
             iconimg.Cursor = Cursors.Hand;
             iconimg.FlatStyle = FlatStyle.Popup;
             iconimg.Image = Properties.Resources.icon_menu;
-            iconimg.Location = new Point(1700, 26);
+            iconimg.Location = new Point(1080, 26);
             iconimg.Name = "iconimg";
             iconimg.Size = new Size(62, 54);
             iconimg.TabIndex = 54;
@@ -109,7 +106,7 @@
             closeBtnRegister.FlatStyle = FlatStyle.Popup;
             closeBtnRegister.ForeColor = SystemColors.ButtonHighlight;
             closeBtnRegister.Image = Properties.Resources.close;
-            closeBtnRegister.Location = new Point(1780, 20);
+            closeBtnRegister.Location = new Point(1160, 20);
             closeBtnRegister.Name = "closeBtnRegister";
             closeBtnRegister.Size = new Size(75, 66);
             closeBtnRegister.TabIndex = 53;
@@ -132,10 +129,7 @@
             dataGridViewUsers.Name = "dataGridViewUsers";
             dataGridViewUsers.Size = new Size(531, 349);
             dataGridViewUsers.TabIndex = 57;
-<<<<<<< HEAD
-=======
             dataGridViewUsers.CellContentClick += dataGridViewUsers_CellContentClick;
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // label1
             // 
@@ -156,10 +150,7 @@
             buttonIdSearch.TabIndex = 60;
             buttonIdSearch.Text = "Поиск";
             buttonIdSearch.UseVisualStyleBackColor = true;
-<<<<<<< HEAD
-=======
             buttonIdSearch.Click += buttonIdSearch_Click_1;
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // idSearchField
             // 
@@ -195,10 +186,7 @@
             buttonRoleSearch.TabIndex = 65;
             buttonRoleSearch.Text = "Поиск";
             buttonRoleSearch.UseVisualStyleBackColor = true;
-<<<<<<< HEAD
-=======
             buttonRoleSearch.Click += buttonRoleSearch_Click;
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // 
             // roleSearchField
             // 
@@ -208,12 +196,11 @@
             roleSearchField.Size = new Size(284, 23);
             roleSearchField.TabIndex = 66;
             // 
-<<<<<<< HEAD
-=======
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox1.BackColor = SystemColors.ScrollBar;
-            pictureBox1.Location = new Point(1073, 243);
+            pictureBox1.Location = new Point(646, 243);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(496, 50);
             pictureBox1.TabIndex = 67;
@@ -221,10 +208,11 @@
             // 
             // label4
             // 
+            label4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label4.AutoSize = true;
             label4.BackColor = SystemColors.ScrollBar;
             label4.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label4.Location = new Point(1085, 255);
+            label4.Location = new Point(658, 255);
             label4.Name = "label4";
             label4.Size = new Size(380, 29);
             label4.TabIndex = 68;
@@ -242,10 +230,11 @@
             // 
             // idishnik
             // 
+            idishnik.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             idishnik.AutoSize = true;
             idishnik.BackColor = SystemColors.ScrollBar;
             idishnik.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            idishnik.Location = new Point(1465, 255);
+            idishnik.Location = new Point(1038, 255);
             idishnik.Name = "idishnik";
             idishnik.Size = new Size(35, 29);
             idishnik.TabIndex = 70;
@@ -254,9 +243,10 @@
             // 
             // changedRoles
             // 
+            changedRoles.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             changedRoles.Cursor = Cursors.Hand;
             changedRoles.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            changedRoles.Location = new Point(1073, 351);
+            changedRoles.Location = new Point(646, 351);
             changedRoles.Name = "changedRoles";
             changedRoles.Size = new Size(174, 47);
             changedRoles.TabIndex = 71;
@@ -267,10 +257,11 @@
             // 
             // deleteUser
             // 
+            deleteUser.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             deleteUser.Cursor = Cursors.Hand;
             deleteUser.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
             deleteUser.ForeColor = Color.Red;
-            deleteUser.Location = new Point(1326, 351);
+            deleteUser.Location = new Point(899, 351);
             deleteUser.Name = "deleteUser";
             deleteUser.Size = new Size(218, 47);
             deleteUser.TabIndex = 72;
@@ -281,7 +272,8 @@
             // 
             // passAdmText
             // 
-            passAdmText.Location = new Point(1073, 462);
+            passAdmText.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            passAdmText.Location = new Point(646, 462);
             passAdmText.Name = "passAdmText";
             passAdmText.Size = new Size(224, 23);
             passAdmText.TabIndex = 73;
@@ -289,8 +281,9 @@
             // 
             // label5
             // 
+            label5.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label5.AutoSize = true;
-            label5.Location = new Point(1073, 444);
+            label5.Location = new Point(646, 444);
             label5.Name = "label5";
             label5.Size = new Size(187, 15);
             label5.TabIndex = 74;
@@ -299,8 +292,9 @@
             // 
             // rolesComboBox
             // 
+            rolesComboBox.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             rolesComboBox.FormattingEnabled = true;
-            rolesComboBox.Location = new Point(1073, 555);
+            rolesComboBox.Location = new Point(646, 555);
             rolesComboBox.Name = "rolesComboBox";
             rolesComboBox.Size = new Size(357, 23);
             rolesComboBox.TabIndex = 75;
@@ -309,8 +303,9 @@
             // 
             // buttonChangeRoles
             // 
+            buttonChangeRoles.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonChangeRoles.Cursor = Cursors.Hand;
-            buttonChangeRoles.Location = new Point(1478, 555);
+            buttonChangeRoles.Location = new Point(1051, 555);
             buttonChangeRoles.Name = "buttonChangeRoles";
             buttonChangeRoles.Size = new Size(75, 23);
             buttonChangeRoles.TabIndex = 76;
@@ -319,16 +314,26 @@
             buttonChangeRoles.Visible = false;
             buttonChangeRoles.Click += buttonChangeRoles_Click;
             // 
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+            // backtomenu
+            // 
+            backtomenu.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            backtomenu.BackgroundImage = Properties.Resources.backtomenu;
+            backtomenu.Cursor = Cursors.Hand;
+            backtomenu.Location = new Point(37, 797);
+            backtomenu.Name = "backtomenu";
+            backtomenu.Size = new Size(69, 71);
+            backtomenu.TabIndex = 77;
+            backtomenu.TabStop = false;
+            backtomenu.Click += backtomenu_Click;
+            // 
             // redacUsers
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLightLight;
-            ClientSize = new Size(1904, 1041);
+            ClientSize = new Size(1284, 901);
             ControlBox = false;
-<<<<<<< HEAD
-=======
+            Controls.Add(backtomenu);
             Controls.Add(buttonChangeRoles);
             Controls.Add(rolesComboBox);
             Controls.Add(label5);
@@ -339,7 +344,6 @@
             Controls.Add(idForRedacUser);
             Controls.Add(label4);
             Controls.Add(pictureBox1);
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             Controls.Add(roleSearchField);
             Controls.Add(buttonRoleSearch);
             Controls.Add(label3);
@@ -353,16 +357,16 @@
             Controls.Add(iconimg);
             Controls.Add(closeBtnRegister);
             Controls.Add(logoiconRegister);
+            MaximumSize = new Size(1920, 1080);
+            MinimumSize = new Size(1300, 940);
             Name = "redacUsers";
-            Text = "redacUsers";
+            Text = "Редактирование пользователей";
             Load += redacUsers_Load;
             ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).EndInit();
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).EndInit();
-<<<<<<< HEAD
-=======
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+            ((System.ComponentModel.ISupportInitialize)backtomenu).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -382,8 +386,6 @@
         private Label label3;
         private Button buttonRoleSearch;
         private ComboBox roleSearchField;
-<<<<<<< HEAD
-=======
         private PictureBox pictureBox1;
         private Label label4;
         private Label idForRedacUser;
@@ -394,6 +396,6 @@
         private Label label5;
         private ComboBox rolesComboBox;
         private Button buttonChangeRoles;
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+        private PictureBox backtomenu;
     }
 }

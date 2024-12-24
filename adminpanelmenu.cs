@@ -43,12 +43,6 @@ namespace WinFormsApp1
 
         private void toRedacUsers_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            redacUsers redUser = new redacUsers(CurrentUser);  
-            redUser.Show();
-            this.Close();
-        }
-=======
             redacUsers redUser = new redacUsers(CurrentUser);
             redUser.Show();
             this.Close();
@@ -67,6 +61,19 @@ namespace WinFormsApp1
             redacRolesMain.Show();
             this.Close();
         }
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            requestsinadmin requestsinadmin = new requestsinadmin(CurrentUser);
+            requestsinadmin.Show();
+            this.Close();
+        }
+
+        private void toRedacSchedule_Click(object sender, EventArgs e)
+        {
+            toRedacSchedule redacSchedule = new toRedacSchedule(CurrentUser);
+            this.Close();
+            redacSchedule.Show();
+        }
     }
 }

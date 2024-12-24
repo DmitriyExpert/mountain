@@ -31,23 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminpanelmenu));
             iconimg = new Button();
             closeBtnRegister = new Button();
-<<<<<<< HEAD
-            logoiconRegister = new PictureBox();
-=======
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             AdminPanelLogo = new PictureBox();
             toClient = new Label();
             toRedacUsers = new Label();
             toRedacRoles = new Label();
-<<<<<<< HEAD
-            ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).BeginInit();
-=======
             logoiconRegister = new PictureBox();
             linktoredacRolesMain = new Label();
+            label1 = new Label();
+            toRedacSchedule = new Label();
             ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             SuspendLayout();
             // 
             // iconimg
@@ -56,7 +49,7 @@
             iconimg.Cursor = Cursors.Hand;
             iconimg.FlatStyle = FlatStyle.Popup;
             iconimg.Image = Properties.Resources.icon_menu;
-            iconimg.Location = new Point(1706, 32);
+            iconimg.Location = new Point(1081, 32);
             iconimg.Name = "iconimg";
             iconimg.Size = new Size(62, 54);
             iconimg.TabIndex = 49;
@@ -74,25 +67,13 @@
             closeBtnRegister.FlatStyle = FlatStyle.Popup;
             closeBtnRegister.ForeColor = SystemColors.ButtonHighlight;
             closeBtnRegister.Image = Properties.Resources.close;
-            closeBtnRegister.Location = new Point(1786, 26);
+            closeBtnRegister.Location = new Point(1161, 26);
             closeBtnRegister.Name = "closeBtnRegister";
             closeBtnRegister.Size = new Size(75, 66);
             closeBtnRegister.TabIndex = 48;
             closeBtnRegister.UseVisualStyleBackColor = true;
             closeBtnRegister.Click += closeBtnRegister_Click;
             // 
-<<<<<<< HEAD
-            // logoiconRegister
-            // 
-            logoiconRegister.Image = Properties.Resources.SCHEDULE_mountain;
-            logoiconRegister.Location = new Point(43, 32);
-            logoiconRegister.Name = "logoiconRegister";
-            logoiconRegister.Size = new Size(298, 37);
-            logoiconRegister.TabIndex = 47;
-            logoiconRegister.TabStop = false;
-            // 
-=======
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             // AdminPanelLogo
             // 
             AdminPanelLogo.Image = (Image)resources.GetObject("AdminPanelLogo.Image");
@@ -104,10 +85,11 @@
             // 
             // toClient
             // 
+            toClient.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             toClient.AutoSize = true;
             toClient.Cursor = Cursors.Hand;
             toClient.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            toClient.Location = new Point(1415, 41);
+            toClient.Location = new Point(790, 41);
             toClient.Name = "toClient";
             toClient.Size = new Size(222, 29);
             toClient.TabIndex = 51;
@@ -135,11 +117,6 @@
             toRedacRoles.ForeColor = SystemColors.MenuHighlight;
             toRedacRoles.Location = new Point(330, 123);
             toRedacRoles.Name = "toRedacRoles";
-<<<<<<< HEAD
-            toRedacRoles.Size = new Size(169, 19);
-            toRedacRoles.TabIndex = 53;
-            toRedacRoles.Text = "Управление ролями";
-=======
             toRedacRoles.Size = new Size(215, 19);
             toRedacRoles.TabIndex = 53;
             toRedacRoles.Text = "Управление автосменами";
@@ -166,40 +143,57 @@
             linktoredacRolesMain.TabIndex = 55;
             linktoredacRolesMain.Text = "Управление ролями";
             linktoredacRolesMain.Click += linktoredacRolesMain_Click;
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Cursor = Cursors.Hand;
+            label1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label1.ForeColor = SystemColors.MenuHighlight;
+            label1.Location = new Point(819, 123);
+            label1.Name = "label1";
+            label1.Size = new Size(255, 19);
+            label1.TabIndex = 56;
+            label1.Text = "Запросы на смену расписания";
+            label1.Click += label1_Click;
+            // 
+            // toRedacSchedule
+            // 
+            toRedacSchedule.AutoSize = true;
+            toRedacSchedule.Cursor = Cursors.Hand;
+            toRedacSchedule.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            toRedacSchedule.ForeColor = SystemColors.MenuHighlight;
+            toRedacSchedule.Location = new Point(43, 190);
+            toRedacSchedule.Name = "toRedacSchedule";
+            toRedacSchedule.Size = new Size(215, 19);
+            toRedacSchedule.TabIndex = 57;
+            toRedacSchedule.Text = "Управление расписанием";
+            toRedacSchedule.Click += toRedacSchedule_Click;
             // 
             // adminpanelmenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLightLight;
-            ClientSize = new Size(1904, 1041);
+            ClientSize = new Size(1279, 661);
             ControlBox = false;
-<<<<<<< HEAD
-=======
+            Controls.Add(toRedacSchedule);
+            Controls.Add(label1);
             Controls.Add(linktoredacRolesMain);
             Controls.Add(logoiconRegister);
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             Controls.Add(toRedacRoles);
             Controls.Add(toRedacUsers);
             Controls.Add(toClient);
             Controls.Add(AdminPanelLogo);
             Controls.Add(iconimg);
             Controls.Add(closeBtnRegister);
-<<<<<<< HEAD
-            Controls.Add(logoiconRegister);
+            MaximumSize = new Size(1920, 1080);
+            MinimumSize = new Size(1295, 700);
             Name = "adminpanelmenu";
-            Text = "adminpanelmenu";
-            Load += adminpanelmenu_Load;
-            ((System.ComponentModel.ISupportInitialize)logoiconRegister).EndInit();
-            ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).EndInit();
-=======
-            Name = "adminpanelmenu";
-            Text = "adminpanelmenu";
+            Text = "Админ панель";
             Load += adminpanelmenu_Load;
             ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).EndInit();
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).EndInit();
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             ResumeLayout(false);
             PerformLayout();
         }
@@ -208,18 +202,13 @@
 
         private Button iconimg;
         private Button closeBtnRegister;
-<<<<<<< HEAD
-        private PictureBox logoiconRegister;
-=======
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
         private PictureBox AdminPanelLogo;
         private Label toClient;
         private Label toRedacUsers;
         private Label toRedacRoles;
-<<<<<<< HEAD
-=======
         private PictureBox logoiconRegister;
         private Label linktoredacRolesMain;
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+        private Label label1;
+        private Label toRedacSchedule;
     }
 }

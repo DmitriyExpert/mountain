@@ -4,11 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-<<<<<<< HEAD
-
-=======
 using System.Text.RegularExpressions;
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
 namespace WinFormsApp1
 {
     internal static class functions
@@ -30,9 +26,6 @@ namespace WinFormsApp1
                 label.Visible = false;
             }
         }
-<<<<<<< HEAD
-    }
-=======
 
     
 
@@ -41,5 +34,4 @@ namespace WinFormsApp1
             return Regex.IsMatch(text, @"\d");
         }
 }
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
 }

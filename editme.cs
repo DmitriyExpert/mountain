@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -30,7 +31,7 @@ namespace WinFormsApp1
 
             if (table.Rows.Count > 0)
             {
-                MessageBox.Show(table.Rows.Count.ToString());
+
                 DataRow row = table.Rows[0];
                 string roleName = row["role_name"]?.ToString() ?? "Роль не определена";
                 labelProff.Text = roleName;
@@ -40,11 +41,7 @@ namespace WinFormsApp1
                 labelProff.Text = "Ошибка";
             }
 
-<<<<<<< HEAD
-            fioUser.Text = CurrentUser.LastName + " " + CurrentUser.FirsName + " " + CurrentUser.MiddleName;
-=======
             fioUser.Text = CurrentUser.LastName + " " + CurrentUser.FirstName + " " + CurrentUser.MiddleName;
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
             identifyUser.Text = CurrentUser.Id.ToString() + ' ' + "-";
             _curruser = CurrentUser;
             labelVisible = this.panel;
@@ -70,6 +67,23 @@ namespace WinFormsApp1
 
         private void label5_Click(object sender, EventArgs e)
         {
+            string firstName = firstNameEditField.Text.Trim();
+            string lastName = lastNameEditField.Text.Trim();
+            string middleName = middleNameEditField.Text.Trim();
+            string password = passwordEditField.Text.Trim();
+
+            bool isValid = true;
+            if (!ValidateName(firstName, "Имя", firstNameEditField)) isValid = false;
+            if (!ValidateName(lastName, "Фамилия", lastNameEditField)) isValid = false;
+            if (!ValidateName(middleName, "Отчество", middleNameEditField)) isValid = false;
+            if (!ValidatePassword(password))
+            {
+                passwordEditField.BackColor = System.Drawing.Color.Salmon;
+                MessageBox.Show("Пароль должен содержать минимум 8 символов!");
+                isValid = false;
+            }
+            if (!isValid) return;
+
             if (firstNameEditField.Text != "" || lastNameEditField.Text != "" || middleNameEditField.Text != "" || passwordEditField.Text != "")
             {
                 try
@@ -81,21 +95,13 @@ namespace WinFormsApp1
 
                         if (firstNameEditField.Text != "")
                         {
-<<<<<<< HEAD
-                            using (MySqlCommand commandNameField = new MySqlCommand("UPDATE mountain.users SET `firs_name` = @fn WHERE `id` = @cuID", connection))
-=======
                             using (MySqlCommand commandNameField = new MySqlCommand("UPDATE mountain.users SET `first_name` = @fn WHERE `id` = @cuID", connection))
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
                             {
                                 commandNameField.Parameters.AddWithValue("@fn", firstNameEditField.Text);
                                 commandNameField.Parameters.AddWithValue("@cuID", _curruser.Id);
                                 commandNameField.ExecuteNonQuery();
                             }
-<<<<<<< HEAD
-                            _curruser.FirsName = firstNameEditField.Text;
-=======
                             _curruser.FirstName = firstNameEditField.Text;
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
                         }
 
                         if (lastNameEditField.Text != "")
@@ -122,18 +128,6 @@ namespace WinFormsApp1
 
                         if (passwordEditField.Text != "")
                         {
-<<<<<<< HEAD
-                            if(repassEditField.Text != "" && repassEditField.Text == passwordEditField.Text)
-                            {
-                                using (MySqlCommand commandLastNameField = new MySqlCommand("UPDATE mountain.users SET `pass` = @p WHERE `id` = @cuID", connection))
-                                {
-                                    commandLastNameField.Parameters.AddWithValue("@p", passwordEditField.Text);
-                                    commandLastNameField.Parameters.AddWithValue("@cuID", _curruser.Id);
-                                    commandLastNameField.ExecuteNonQuery();
-                                }
-            
-                            } else
-=======
                             if (repassEditField.Text != "" && repassEditField.Text == passwordEditField.Text)
                             {
                                 using (MySqlCommand commandLastNameField = new MySqlCommand("UPDATE mountain.users SET `pass` = @p WHERE `id` = @cuID", connection))
@@ -145,7 +139,6 @@ namespace WinFormsApp1
 
                             }
                             else
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
                             {
                                 MessageBox.Show("Введите пароль повторно, в поле для повторного ввода");
                                 return;
@@ -173,14 +166,34 @@ namespace WinFormsApp1
             }
         }
 
+        private bool ValidateName(string name, string fieldName, TextBox textBox)
+        {
+
+            if (name.Length < 2 && name.Length != 0)
+            {
+                textBox.BackColor = System.Drawing.Color.Salmon;
+                MessageBox.Show($"{fieldName} должно содержать минимум 2 символа!");
+                return false;
+            }
+            if (Regex.IsMatch(name, @"\d"))
+            {
+                textBox.BackColor = System.Drawing.Color.Salmon;
+                MessageBox.Show($"{fieldName} не должно содержать цифры!");
+                return false;
+            }
+            return true;
+        }
+        private bool ValidatePassword(string password)
+        {
+            return !string.IsNullOrEmpty(password) && password.Length >= 8;
+        }
+
         private void backtomenu_Click(object sender, EventArgs e)
         {
             cabinet cabinet = new cabinet(_curruser);
             this.Close();
             cabinet.Show();
         }
-<<<<<<< HEAD
-=======
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -198,6 +211,17 @@ namespace WinFormsApp1
             adminpanelmenu.Show();
             this.Close();
         }
->>>>>>> 8e1dbe24d4170ecbc37e7ef464b4889fb7a3e141
+
+        private void pictureToCabinet_Click(object sender, EventArgs e)
+        {
+            cabinet cabinet = new cabinet(_curruser);
+            this.Close();
+            cabinet.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

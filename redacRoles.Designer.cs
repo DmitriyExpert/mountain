@@ -47,8 +47,10 @@
             label2 = new Label();
             comboBoxDeleteForPeriodsTime = new ComboBox();
             buttonDelete = new Button();
+            backtomenu = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).BeginInit();
             ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)backtomenu).BeginInit();
             SuspendLayout();
             // 
             // logoiconRegister
@@ -71,14 +73,16 @@
             // 
             // toClient
             // 
+            toClient.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             toClient.AutoSize = true;
             toClient.Cursor = Cursors.Hand;
             toClient.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            toClient.Location = new Point(1419, 44);
+            toClient.Location = new Point(737, 29);
             toClient.Name = "toClient";
             toClient.Size = new Size(222, 29);
             toClient.TabIndex = 54;
             toClient.Text = "Клиентская часть";
+            toClient.Click += toClient_Click;
             // 
             // iconimg
             // 
@@ -86,7 +90,7 @@
             iconimg.Cursor = Cursors.Hand;
             iconimg.FlatStyle = FlatStyle.Popup;
             iconimg.Image = Properties.Resources.icon_menu;
-            iconimg.Location = new Point(1710, 35);
+            iconimg.Location = new Point(990, 19);
             iconimg.Name = "iconimg";
             iconimg.Size = new Size(62, 54);
             iconimg.TabIndex = 53;
@@ -104,7 +108,7 @@
             closeBtnRegister.FlatStyle = FlatStyle.Popup;
             closeBtnRegister.ForeColor = SystemColors.ButtonHighlight;
             closeBtnRegister.Image = Properties.Resources.close;
-            closeBtnRegister.Location = new Point(1790, 29);
+            closeBtnRegister.Location = new Point(1075, 12);
             closeBtnRegister.Name = "closeBtnRegister";
             closeBtnRegister.Size = new Size(75, 66);
             closeBtnRegister.TabIndex = 52;
@@ -252,13 +256,26 @@
             buttonDelete.UseVisualStyleBackColor = false;
             buttonDelete.Click += buttonDelete_Click;
             // 
+            // backtomenu
+            // 
+            backtomenu.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            backtomenu.BackgroundImage = Properties.Resources.backtomenu;
+            backtomenu.Cursor = Cursors.Hand;
+            backtomenu.Location = new Point(34, 643);
+            backtomenu.Name = "backtomenu";
+            backtomenu.Size = new Size(69, 71);
+            backtomenu.TabIndex = 72;
+            backtomenu.TabStop = false;
+            backtomenu.Click += backtomenu_Click;
+            // 
             // redacRoles
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(1904, 1041);
+            ClientSize = new Size(1184, 751);
             ControlBox = false;
+            Controls.Add(backtomenu);
             Controls.Add(buttonDelete);
             Controls.Add(comboBoxDeleteForPeriodsTime);
             Controls.Add(label2);
@@ -277,11 +294,14 @@
             Controls.Add(closeBtnRegister);
             Controls.Add(AdminPanelLogo);
             Controls.Add(logoiconRegister);
+            MaximumSize = new Size(1920, 1080);
+            MinimumSize = new Size(1200, 790);
             Name = "redacRoles";
-            Text = "redacRoles";
+            Text = "Редактирование автосмен";
             Load += redacRoles_Load;
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).EndInit();
             ((System.ComponentModel.ISupportInitialize)AdminPanelLogo).EndInit();
+            ((System.ComponentModel.ISupportInitialize)backtomenu).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -306,5 +326,6 @@
         private Label label2;
         private ComboBox comboBoxDeleteForPeriodsTime;
         private Button buttonDelete;
+        private PictureBox backtomenu;
     }
 }

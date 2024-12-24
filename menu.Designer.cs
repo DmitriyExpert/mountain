@@ -66,7 +66,7 @@
             iconimg.Cursor = Cursors.Hand;
             iconimg.FlatStyle = FlatStyle.Popup;
             iconimg.Image = Properties.Resources.icon_menu;
-            iconimg.Location = new Point(1717, 32);
+            iconimg.Location = new Point(1277, 32);
             iconimg.Name = "iconimg";
             iconimg.Size = new Size(62, 54);
             iconimg.TabIndex = 23;
@@ -84,7 +84,7 @@
             closeBtnRegister.FlatStyle = FlatStyle.Popup;
             closeBtnRegister.ForeColor = SystemColors.ButtonHighlight;
             closeBtnRegister.Image = Properties.Resources.close;
-            closeBtnRegister.Location = new Point(1797, 26);
+            closeBtnRegister.Location = new Point(1357, 26);
             closeBtnRegister.Name = "closeBtnRegister";
             closeBtnRegister.Size = new Size(75, 66);
             closeBtnRegister.TabIndex = 22;
@@ -97,7 +97,7 @@
             pictureToCabinet.BackgroundImage = Properties.Resources.user__icon;
             pictureToCabinet.BackgroundImageLayout = ImageLayout.Center;
             pictureToCabinet.Cursor = Cursors.Hand;
-            pictureToCabinet.Location = new Point(1558, 18);
+            pictureToCabinet.Location = new Point(1118, 18);
             pictureToCabinet.Name = "pictureToCabinet";
             pictureToCabinet.Size = new Size(74, 74);
             pictureToCabinet.TabIndex = 24;
@@ -110,7 +110,7 @@
             toPanelAdm.AutoSize = true;
             toPanelAdm.Cursor = Cursors.Hand;
             toPanelAdm.Font = new Font("Arial Narrow", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            toPanelAdm.Location = new Point(1318, 44);
+            toPanelAdm.Location = new Point(878, 44);
             toPanelAdm.Name = "toPanelAdm";
             toPanelAdm.Size = new Size(185, 25);
             toPanelAdm.TabIndex = 25;
@@ -123,7 +123,7 @@
             pictureBox2.Image = Properties.Resources.W5Fh769EYAU_1;
             pictureBox2.Location = new Point(0, 102);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1904, 939);
+            pictureBox2.Size = new Size(1464, 834);
             pictureBox2.TabIndex = 26;
             pictureBox2.TabStop = false;
             // 
@@ -138,6 +138,7 @@
             // 
             // developersTitle
             // 
+            developersTitle.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             developersTitle.AutoSize = true;
             developersTitle.BackColor = Color.Gray;
             developersTitle.Cursor = Cursors.Hand;
@@ -151,6 +152,7 @@
             // 
             // labelName1
             // 
+            labelName1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             labelName1.AutoSize = true;
             labelName1.BackColor = Color.Gray;
             labelName1.Cursor = Cursors.Hand;
@@ -164,6 +166,7 @@
             // 
             // labelName2
             // 
+            labelName2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             labelName2.AutoSize = true;
             labelName2.BackColor = Color.Gray;
             labelName2.Cursor = Cursors.Hand;
@@ -177,6 +180,7 @@
             // 
             // labelName3
             // 
+            labelName3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             labelName3.AutoSize = true;
             labelName3.BackColor = Color.Gray;
             labelName3.Cursor = Cursors.Hand;
@@ -190,6 +194,7 @@
             // 
             // labelGroup
             // 
+            labelGroup.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             labelGroup.AutoSize = true;
             labelGroup.BackColor = Color.Gray;
             labelGroup.Cursor = Cursors.Hand;
@@ -203,8 +208,9 @@
             // 
             // menuWrapper
             // 
+            menuWrapper.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             menuWrapper.BackColor = Color.Gray;
-            menuWrapper.Location = new Point(1048, 181);
+            menuWrapper.Location = new Point(608, 181);
             menuWrapper.Name = "menuWrapper";
             menuWrapper.Size = new Size(713, 704);
             menuWrapper.TabIndex = 33;
@@ -212,11 +218,12 @@
             // 
             // menuTitle
             // 
+            menuTitle.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             menuTitle.AutoSize = true;
             menuTitle.BackColor = Color.Gray;
             menuTitle.Font = new Font("Arial Black", 48F, FontStyle.Bold, GraphicsUnit.Point, 204);
             menuTitle.ForeColor = SystemColors.Control;
-            menuTitle.Location = new Point(1289, 356);
+            menuTitle.Location = new Point(849, 356);
             menuTitle.Name = "menuTitle";
             menuTitle.Size = new Size(249, 90);
             menuTitle.TabIndex = 34;
@@ -224,12 +231,13 @@
             // 
             // toCabinet
             // 
+            toCabinet.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             toCabinet.AutoSize = true;
             toCabinet.BackColor = Color.Gray;
             toCabinet.Cursor = Cursors.Hand;
             toCabinet.Font = new Font("Arial Black", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             toCabinet.ForeColor = SystemColors.Control;
-            toCabinet.Location = new Point(1329, 492);
+            toCabinet.Location = new Point(889, 492);
             toCabinet.Name = "toCabinet";
             toCabinet.Size = new Size(152, 41);
             toCabinet.TabIndex = 36;
@@ -238,23 +246,25 @@
             // 
             // toContact
             // 
+            toContact.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             toContact.AutoSize = true;
             toContact.BackColor = Color.Gray;
             toContact.Cursor = Cursors.Hand;
             toContact.Font = new Font("Arial Black", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             toContact.ForeColor = SystemColors.Control;
-            toContact.Location = new Point(1318, 576);
+            toContact.Location = new Point(878, 576);
             toContact.Name = "toContact";
             toContact.Size = new Size(173, 41);
             toContact.TabIndex = 37;
             toContact.Text = "Контакты";
+            toContact.Click += toContact_Click;
             // 
             // menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1904, 1041);
+            ClientSize = new Size(1464, 936);
             ControlBox = false;
             Controls.Add(toContact);
             Controls.Add(toCabinet);
@@ -272,8 +282,10 @@
             Controls.Add(closeBtnRegister);
             Controls.Add(logoiconRegister);
             Controls.Add(pictureBox2);
+            MaximumSize = new Size(1920, 1080);
+            MinimumSize = new Size(1480, 975);
             Name = "menu";
-            Text = "menu";
+            Text = "Главное меню";
             Load += menu_Load;
             ((System.ComponentModel.ISupportInitialize)logoiconRegister).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureToCabinet).EndInit();

@@ -23,7 +23,9 @@ namespace WinFormsApp1
 
         private void closeBtnRegister_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            adminpanelmenu adminpanelmenu = new adminpanelmenu(CurrentUser);
+            adminpanelmenu.Show();
+            this.Close();
         }
 
         private void iconimg_Click(object sender, EventArgs e)
@@ -402,11 +404,12 @@ namespace WinFormsApp1
                 string idShifts = "";
 
                 string[] parts = partsTime.Split(" - ");
-                if(parts.Length == 3)
+                if (parts.Length == 3)
                 {
                     idShifts = parts[2];
                     MessageBox.Show(idShifts);
-                } else
+                }
+                else
                 {
                     MessageBox.Show("Не верный формат даты");
                 }
@@ -417,7 +420,7 @@ namespace WinFormsApp1
                     using (MySqlConnection connection = db.getConnection())
                     {
                         connection.Open();
-                        
+
                         using (MySqlCommand command = new MySqlCommand(sqlQueryDeleteShifts, connection))
                         {
                             command.Parameters.Add("@tsi", MySqlDbType.VarChar).Value = idShifts;
@@ -433,7 +436,7 @@ namespace WinFormsApp1
                             }
                         }
 
-                        
+
                     }
                 }
                 catch (MySqlException ex)
@@ -441,19 +444,34 @@ namespace WinFormsApp1
                     MessageBox.Show($"Ошибка Удаления {ex.Message}");
                 }
 
-            } else
+            }
+            else
             {
-                if(comboBoxForDeleteRoles.Text == "")
+                if (comboBoxForDeleteRoles.Text == "")
                 {
                     MessageBox.Show("Роль не выбрана!");
                 }
-                if(comboBoxDeleteForPeriodsTime.Text == "")
+                if (comboBoxDeleteForPeriodsTime.Text == "")
                 {
                     MessageBox.Show("Временной интервал не выбран");
                 }
                 return;
             }
 
+        }
+
+        private void backtomenu_Click(object sender, EventArgs e)
+        {
+            adminpanelmenu adminpanelmenu = new adminpanelmenu(CurrentUser);
+            adminpanelmenu.Show();
+            this.Close();
+        }
+
+        private void toClient_Click(object sender, EventArgs e)
+        {
+            menu menu = new menu(CurrentUser);
+            menu.Show();
+            this.Close();
         }
     }
 }
